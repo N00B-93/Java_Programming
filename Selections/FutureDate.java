@@ -1,6 +1,6 @@
 package Selections;
 
-import java.util.*;
+import java.util.Scanner;
 
 /*
 	This is a program that prompts the user to enter an integer for

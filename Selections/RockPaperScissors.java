@@ -1,6 +1,7 @@
 package Selections;
 
-import java.util.*;
+import java.util.Scanner;
+import java.util.Random;
 
 /*
 	This is a program that plays the popular scissor-rock-paper

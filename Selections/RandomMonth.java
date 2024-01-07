@@ -1,6 +1,6 @@
 package Selections;
 
-import java.util.*;
+import java.util.Random;
 
 /*
 	This is a program that randomly generates an integer between 1
