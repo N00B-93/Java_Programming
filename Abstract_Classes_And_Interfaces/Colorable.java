@@ -1,2 +1,7 @@
-package Abstract_Classes_And_Interfaces;public interface Colorable {
+package Abstract_Classes_And_Interfaces;
+
+/** Interface that contains one Abstract method.*/
+public interface Colorable
+{
+    void howToColor();
 }
