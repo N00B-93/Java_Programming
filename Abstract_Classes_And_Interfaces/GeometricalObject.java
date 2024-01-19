@@ -9,12 +9,21 @@ public abstract class GeometricalObject
     private boolean filled;
     private Date dateCreated;
 
-    /** Non parameterized constructor that initializes the dateCreated property with a date Object.*/
+
+    /**
+     * Instantiates a new Geometrical object.
+     */
     public GeometricalObject()
     {
         dateCreated = new Date();
     }
 
+    /**
+     * Instantiates a new Geometrical object.
+     *
+     * @param color  the color
+     * @param filled the filled
+     */
     public GeometricalObject(String color, boolean filled)
     {
         dateCreated = new Date();
@@ -22,38 +31,78 @@ public abstract class GeometricalObject
         this.filled = filled;
     }
 
+    /**
+     * Sets date created.
+     *
+     * @param dateCreated the date created
+     */
     public void setDateCreated(Date dateCreated)
     {
         this.dateCreated = dateCreated;
     }
 
+    /**
+     * Sets filled.
+     *
+     * @param filled the filled
+     */
     public void setFilled(boolean filled)
     {
         this.filled = filled;
     }
 
+    /**
+     * Sets color.
+     *
+     * @param color the color
+     */
     public void setColor(String color)
     {
         this.color = color;
     }
 
+    /**
+     * Gets color.
+     *
+     * @return the color
+     */
     public String getColor()
     {
         return color;
     }
 
+    /**
+     * Gets date created.
+     *
+     * @return the date created
+     */
     public Date getDateCreated()
     {
         return dateCreated;
     }
 
+    /**
+     * Is filled boolean.
+     *
+     * @return the boolean
+     */
     public boolean isFilled()
     {
         return filled;
     }
 
+    /**
+     * Gets area.
+     *
+     * @return the area
+     */
     public abstract double getArea();
 
+    /**
+     * Gets perimeter.
+     *
+     * @return the perimeter
+     */
     public abstract double getPerimeter();
 
     public String toString() {
@@ -65,6 +114,15 @@ class Triangle extends GeometricalObject
 {
     private double side1, side2, side3;
 
+    /**
+     * Instantiates a new Triangle.
+     *
+     * @param color  the color
+     * @param filled the filled
+     * @param side1  the side 1
+     * @param side2  the side 2
+     * @param side3  the side 3
+     */
     public Triangle(String color, boolean filled, double side1, double side2, double side3)
     {
         super(color, filled);
@@ -73,31 +131,61 @@ class Triangle extends GeometricalObject
         this.side3 = side3;
     }
 
+    /**
+     * Gets side 3.
+     *
+     * @return the side 3
+     */
     public double getSide3()
     {
         return side3;
     }
 
+    /**
+     * Sets side 3.
+     *
+     * @param side3 the side 3
+     */
     public void setSide3(double side3)
     {
         this.side3 = side3;
     }
 
+    /**
+     * Gets side 2.
+     *
+     * @return the side 2
+     */
     public double getSide2()
     {
         return side2;
     }
 
+    /**
+     * Sets side 2.
+     *
+     * @param side2 the side 2
+     */
     public void setSide2(double side2)
     {
         this.side2 = side2;
     }
 
+    /**
+     * Gets side 1.
+     *
+     * @return the side 1
+     */
     public double getSide1()
     {
         return side1;
     }
 
+    /**
+     * Sets side 1.
+     *
+     * @param side1 the side 1
+     */
     public void setSide1(double side1)
     {
         this.side1 = side1;
