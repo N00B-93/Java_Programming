@@ -16,7 +16,6 @@ public class InputMismatchExceptionClass
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
-
         try  // Try-Catch block that processes InvalidInputException when the user enters a non integer character.
         {
             // Reads in two integers.
