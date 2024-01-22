@@ -17,9 +17,9 @@ class Circle extends GeometricalObject
     /**
      * Instantiates a new Circle.
      *
-     * @param color  the color
-     * @param filled the filled
-     * @param radius the radius
+     * @param color  The color
+     * @param filled Indicates whether the circle is filled or not.
+     * @param radius The radius of the circle.
      */
     public Circle(String color, boolean filled, double radius)
     {
@@ -32,14 +32,22 @@ class Circle extends GeometricalObject
      */
     public Circle(){};
 
-    /** Getter method that returns the area of the Circle Object.*/
+    /**
+     * Method that calculates the area of a circle
+     *
+     * @return The area of the circle.
+     */
     @Override
     public double getArea()
     {
         return Math.PI * Math.pow(this.radius, 2);
     }
 
-        /** Getter method that returns the perimeter of the Circle Object.*/
+    /**
+     * Method that calculates the perimeter of circle.
+     *
+     * @return The perimeter of the circle.
+     */
     @Override
     public double getPerimeter()
     {
@@ -57,12 +65,22 @@ public class ComparableCircle extends Circle implements Comparable<ComparableCir
 
     /**
      * Instantiates a new Comparable circle.
+     *
+     * @param color
+     * @param filled
+     * @param radius
      */
     public ComparableCircle(String color, boolean filled, double radius)
     {
         super(color, filled, radius);
     }
-    /* compareTo method that compares two Circle Object and returns an integer*/
+
+    /**
+     * Method that compares two Comparable Circle Objects.
+     *
+     * @param circle the object to be compared.
+     * @return -1, 0, or 1 which indicates whether a circle is <, ==, or > the other.
+     */
     @Override
     public int compareTo(ComparableCircle circle)
     {

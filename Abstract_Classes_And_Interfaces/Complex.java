@@ -18,15 +18,13 @@ import java.util.Scanner;
  */
 public class Complex implements Cloneable
 {
-
     private double realPart, imaginaryPart;
-
 
     /**
      * Instantiates a new Complex.
      *
-     * @param realPart      the real part
-     * @param imaginaryPart the imaginary part
+     * @param realPart The real part.
+     * @param imaginaryPart The imaginary part.
      */
     public Complex(double realPart, double imaginaryPart)
     {
@@ -37,7 +35,7 @@ public class Complex implements Cloneable
     /**
      * Instantiates a new Complex.
      *
-     * @param imaginaryPart the imaginary part
+     * @param imaginaryPart the imaginary part.
      */
     public Complex(double realPart)
     {
@@ -52,7 +50,7 @@ public class Complex implements Cloneable
     /**
      * Gets imaginary part.
      *
-     * @return the imaginary part
+     * @return The imaginary part.
      */
     public double getImaginaryPart()
     {
@@ -62,7 +60,7 @@ public class Complex implements Cloneable
     /**
      * Gets real part.
      *
-     * @return the real part
+     * @return The real part
      */
     public double getRealPart()
     {
@@ -70,10 +68,10 @@ public class Complex implements Cloneable
     }
 
     /**
-     * Add complex.
+     * Adds two Complex numbers.
      *
-     * @param complex the complex
-     * @return the complex
+     * @param complex The second Complex Object.
+     * @return A Complex Object representing the sum of two Complex Objects.
      */
     public Complex add(Complex complex)
     {
@@ -86,10 +84,10 @@ public class Complex implements Cloneable
     }
 
     /**
-     * Subtract complex.
+     * Subtracts two Complex numbers.
      *
-     * @param complex the complex
-     * @return the complex
+     * @param complex The second Complex Object.
+     * @return A Complex Object representing the difference of two Complex Object.
      */
     public Complex subtract(Complex complex)
     {
@@ -102,9 +100,9 @@ public class Complex implements Cloneable
     }
 
     /**
-     * Abs double.
+     * Calculates the absolute value of a Complex Object.
      *
-     * @return the double
+     * @return The absolute value of a Complex Object.
      */
     public double abs()
     {
@@ -112,10 +110,10 @@ public class Complex implements Cloneable
     }
 
     /**
-     * Multiply complex.
+     * Multiplies  two Complex Object.
      *
-     * @param complex the complex
-     * @return the complex
+     * @param complex The second Complex Object.
+     * @return A Complex Object representing the product of two Complex Object.
      */
     public Complex multiply(Complex complex)
     {
@@ -128,19 +126,28 @@ public class Complex implements Cloneable
     }
 
     /**
-     * Divide complex.
+     * Divide two Complex Objects.
      *
      * @param complex the complex
-     * @return the complex
+     * @return The quotient of two Complex Object.
      */
     public Complex divide(Complex complex)
     {
+        // Extracts the real and imaginary part of the denominator.
         double re = complex.getRealPart();
         double im = complex.getImaginaryPart();
 
+        // Constructs a Complex Object representing the conjugate of the denominator.
         Complex conjugate = new Complex(re, -im);
+
+        // Multiplies the numerator with the denominator.
         Complex numerator = (this.multiply(conjugate));
 
+        /*
+            Divides the product of the numerator and the conjugate of the denominator by
+            the absolute value of the denominator and constructs a new Complex Object
+            representing the division of the two Complex Objects with the result.
+         */
         Complex result = new Complex(numerator.getRealPart() / (complex.abs() * complex.abs()),
                 numerator.getImaginaryPart() / (complex.abs() * complex.abs()));
         return result;
@@ -154,12 +161,24 @@ public class Complex implements Cloneable
         return (this.getRealPart() + " " + "+ " + this.getImaginaryPart() + "i");
     }
 
+
+    /**
+     * Method used to Clone a Complex Object.
+     *
+     * @return A Complex Object clone.
+     * @throws CloneNotSupportedException
+     */
     @Override
     public Object clone() throws CloneNotSupportedException
     {
         return super.clone();
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args)
     {
         // Creates a Scanner Object.

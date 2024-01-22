@@ -1,7 +1,13 @@
 package Abstract_Classes_And_Interfaces;
 
-/** Interface that contains one Abstract method.*/
+/**
+ * Colorable Interface.
+ *
+ */
 public interface Colorable
 {
+    /**
+     * Defines how to color an Object.
+     */
     void howToColor();
 }
