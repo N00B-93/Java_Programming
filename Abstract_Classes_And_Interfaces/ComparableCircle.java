@@ -66,9 +66,9 @@ public class ComparableCircle extends Circle implements Comparable<ComparableCir
     /**
      * Instantiates a new Comparable circle.
      *
-     * @param color
-     * @param filled
-     * @param radius
+     * @param color The Circle's color.
+     * @param filled The circle's filled value
+     * @param radius The Circle's radius.
      */
     public ComparableCircle(String color, boolean filled, double radius)
     {

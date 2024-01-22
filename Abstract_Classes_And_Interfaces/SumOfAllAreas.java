@@ -7,6 +7,11 @@ package Abstract_Classes_And_Interfaces;
 
 public class SumOfAllAreas
 {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args)
     {
         // Creates an array of four Geometrical Objects.

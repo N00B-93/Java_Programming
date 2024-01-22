@@ -2,6 +2,10 @@ package Abstract_Classes_And_Interfaces;
 
 import java.util.Date;
 import java.util.Scanner;
+
+/**
+ * The type Geometrical object.
+ */
 public abstract class GeometricalObject
 {
     // Declares the color, filled and dateCreated properties of a GeometricalObject.
@@ -21,8 +25,8 @@ public abstract class GeometricalObject
     /**
      * Instantiates a new Geometrical object.
      *
-     * @param color  the color
-     * @param filled the filled
+     * @param color  The Object's color
+     * @param filled true or false representing whether an Object is filled or not.
      */
     public GeometricalObject(String color, boolean filled)
     {
@@ -34,7 +38,7 @@ public abstract class GeometricalObject
     /**
      * Sets date created.
      *
-     * @param dateCreated the date created
+     * @param dateCreated The date the Object was created.
      */
     public void setDateCreated(Date dateCreated)
     {
@@ -42,9 +46,9 @@ public abstract class GeometricalObject
     }
 
     /**
-     * Sets filled.
+     * Sets filled value.
      *
-     * @param filled the filled
+     * @param filled The filled value.
      */
     public void setFilled(boolean filled)
     {
@@ -54,7 +58,7 @@ public abstract class GeometricalObject
     /**
      * Sets color.
      *
-     * @param color the color
+     * @param color The color.
      */
     public void setColor(String color)
     {
@@ -62,9 +66,9 @@ public abstract class GeometricalObject
     }
 
     /**
-     * Gets color.
+     * Gets Object's color.
      *
-     * @return the color
+     * @return The color.
      */
     public String getColor()
     {
@@ -74,7 +78,7 @@ public abstract class GeometricalObject
     /**
      * Gets date created.
      *
-     * @return the date created
+     * @return The date created
      */
     public Date getDateCreated()
     {
@@ -84,7 +88,7 @@ public abstract class GeometricalObject
     /**
      * Is filled boolean.
      *
-     * @return the boolean
+     * @return the true if Object is filled, otherwise returns false.
      */
     public boolean isFilled()
     {
@@ -92,24 +96,34 @@ public abstract class GeometricalObject
     }
 
     /**
-     * Gets area.
+     * Gets Object's area.
      *
-     * @return the area
+     * @return The area.
      */
     public abstract double getArea();
 
     /**
-     * Gets perimeter.
+     * Gets Object's perimeter.
      *
-     * @return the perimeter
+     * @return The perimeter
      */
     public abstract double getPerimeter();
 
-    public String toString() {
+    /**
+     * Generates a String representation of the Object.
+     *
+     * @return Object's String representation.
+     */
+    public String toString()
+    {
         return "\nCreated on: " + dateCreated + "\nColor: " + color +
                 "\nisFilled? " + filled;
     }
 }
+
+/**
+ * The type Triangle.
+ */
 class Triangle extends GeometricalObject
 {
     private double side1, side2, side3;
@@ -117,11 +131,11 @@ class Triangle extends GeometricalObject
     /**
      * Instantiates a new Triangle.
      *
-     * @param color  the color
-     * @param filled the filled
-     * @param side1  the side 1
-     * @param side2  the side 2
-     * @param side3  the side 3
+     * @param color  The color.
+     * @param filled The filled value.
+     * @param side1  The side 1.
+     * @param side2  The side 2.
+     * @param side3  The side 3.
      */
     public Triangle(String color, boolean filled, double side1, double side2, double side3)
     {
@@ -134,7 +148,7 @@ class Triangle extends GeometricalObject
     /**
      * Gets side 3.
      *
-     * @return the side 3
+     * @return The side 3
      */
     public double getSide3()
     {
@@ -142,19 +156,9 @@ class Triangle extends GeometricalObject
     }
 
     /**
-     * Sets side 3.
-     *
-     * @param side3 the side 3
-     */
-    public void setSide3(double side3)
-    {
-        this.side3 = side3;
-    }
-
-    /**
      * Gets side 2.
      *
-     * @return the side 2
+     * @return The side 2.
      */
     public double getSide2()
     {
@@ -162,19 +166,9 @@ class Triangle extends GeometricalObject
     }
 
     /**
-     * Sets side 2.
-     *
-     * @param side2 the side 2
-     */
-    public void setSide2(double side2)
-    {
-        this.side2 = side2;
-    }
-
-    /**
      * Gets side 1.
      *
-     * @return the side 1
+     * @return The side 1.
      */
     public double getSide1()
     {
@@ -182,30 +176,32 @@ class Triangle extends GeometricalObject
     }
 
     /**
-     * Sets side 1.
+     * Generates a String representation of a Triangle.
      *
-     * @param side1 the side 1
+     * @return String representation of a Triangle.
      */
-    public void setSide1(double side1)
-    {
-        this.side1 = side1;
-    }
-
-    /** Returns the String description of a Triangle Object.*/
     public String toString()
     {
         return super.toString() + "\nSide1: " + side1 + "\nSide2: "+ side2 + "\nSide3: " + side3;
     }
 
     @Override
-    /** Getter method that returns the perimeter of a Triangle Object.*/
+    /**
+     * Calculates the perimeter of a Triangle.
+     *
+     * @return The Triangle's perimeter.
+     */
     public double getPerimeter()
     {
         return side1 +side2 +side3;
     }
 
     @Override
-    /** Getter method that returns the area of a Triangle Object.*/
+    /**
+     * Calculates the Triangle's area.
+     *
+     * @return The Triangle's area.
+     */
     public double getArea()
     {
         double perimeterAverage = (side1 + side2 + side3) / 2;
@@ -218,6 +214,11 @@ class Triangle extends GeometricalObject
 
 class TestAbstractClass
 {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args)
     {
         // Creates a Scanner Object.

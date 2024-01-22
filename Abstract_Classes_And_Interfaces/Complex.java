@@ -128,7 +128,7 @@ public class Complex implements Cloneable
     /**
      * Divide two Complex Objects.
      *
-     * @param complex the complex
+     * @param complex The second Complex Object.
      * @return The quotient of two Complex Object.
      */
     public Complex divide(Complex complex)

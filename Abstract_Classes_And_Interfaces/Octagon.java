@@ -10,7 +10,7 @@ public class Octagon implements Comparable<Octagon>, Cloneable
     /**
      * Instantiates a new Octagon Object with the given side.
      *
-     * @param The side of the Octagon.
+     * @param side The side of the Octagon.
      */
     public Octagon(double side)
     {
@@ -55,7 +55,7 @@ public class Octagon implements Comparable<Octagon>, Cloneable
 
     /**
      * Clones an Octagon Object.
-     * 
+     *
      * @return A clone of an Octagon Object.
      * @throws CloneNotSupportedException
      */
