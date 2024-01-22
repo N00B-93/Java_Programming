@@ -9,24 +9,39 @@ import java.util.Scanner;
     the area is displayed and the howToColor method is invoked if the object is Colorable.
  */
 
+/**
+ * The type Square.
+ */
 public class Square extends GeometricalObject implements Colorable
 {
     private double side;
 
-    /** Constructor that creates a Square Object with a specified side.*/
+    /**
+     * Instantiates a Square Object with the given side.
+     *
+     * @param side
+     */
     public Square(double side)
     {
         this.side = side;
     }
 
-    /** Getter method that returns the area of the Square.*/
+    /**
+     * Calculate the area of a Square Object.
+     *
+     * @return The area of the Square Object.
+     */
     @Override
     public double getArea()
     {
         return Math.pow(this.side, 2);
     }
 
-    /** Getter method that returns the perimeter of the Square.*/
+    /**
+     * Calculates the perimeter of a Square Object.
+     *
+     * @return The perimeter of a Square Object.
+     */
     @Override
     public double getPerimeter()
     {
@@ -34,12 +49,21 @@ public class Square extends GeometricalObject implements Colorable
     }
 
     @Override
-    /** Method that describes hot to color a Square Object.*/
+    /**
+     * Describes how to color a Square Object.
+     *
+     * @return void
+     */
     public void howToColor()
     {
         System.out.println("How to color: Color all four sides.");
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);

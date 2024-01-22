@@ -8,9 +8,9 @@ public class Octagon implements Comparable<Octagon>, Cloneable
     private double side;
 
     /**
-     * Instantiates a new Octagon.
+     * Instantiates a new Octagon Object with the given side.
      *
-     * @param side   the side
+     * @param The side of the Octagon.
      */
     public Octagon(double side)
     {
@@ -18,9 +18,9 @@ public class Octagon implements Comparable<Octagon>, Cloneable
     }
 
     /**
-     * Gets area.
+     * Calculates the area of an Octagon Object.
      *
-     * @return the area
+     * @return The area of the Octagon.
      */
     public double getArea()
     {
@@ -28,15 +28,21 @@ public class Octagon implements Comparable<Octagon>, Cloneable
     }
 
     /**
-     * Gets perimeter.
+     * Calculates the perimeter of an Octagon.
      *
-     * @return the perimeter
+     * @return The perimeter of the Octagon.
      */
     public double getPerimeter()
     {
         return this.side * 8;
     }
 
+    /**
+     * Compares two Octagon Object.
+     *
+     * @param octagon the object to be compared.
+     * @return -1, 0, or 1 that indicates whether one Octagon object is <, == or > the other.
+     */
     @Override
     public int compareTo(Octagon octagon)
     {
@@ -47,6 +53,12 @@ public class Octagon implements Comparable<Octagon>, Cloneable
         return 1;
     }
 
+    /**
+     * Clones an Octagon Object.
+     * 
+     * @return A clone of an Octagon Object.
+     * @throws CloneNotSupportedException
+     */
     @Override
     public Object clone() throws CloneNotSupportedException
     {
