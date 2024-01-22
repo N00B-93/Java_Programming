@@ -21,14 +21,14 @@ public class SumOfAllAreas
     }
 
     /**
-     * Sum areas double.
+     * Calculates the sum of areas of all GeometricalObjects in an array.
      *
-     * @param objects the objects
-     * @return the double
+     * @param objects Array of GeometricalObjects
+     * @return The sum of the areas of all GeometricalObjects in the array.
      */
     public static double sumAreas(GeometricalObject[] objects)
     {
-        double area = 0;
+        double area = 0.0;
 
         for(GeometricalObject object: objects)
             area += object.getArea();
