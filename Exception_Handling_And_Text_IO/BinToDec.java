@@ -8,10 +8,14 @@ import java.util.Scanner;
 	is thrown and an error message is displayed.
  */
 
+/**
+ * The type Bin to dec.
+ */
 public class BinToDec
 {
 	public static void main(String... doYourBest)
 	{
+		// Creates a Scanner Object.
 		Scanner input = new Scanner(System.in);
 
 		System.out.printf("\nEnter a Binary String: ");
@@ -33,9 +37,9 @@ public class BinToDec
 	}
 
 	/**
-	 * Check binary string.
+	 * Checks if a string is a binary string.
 	 *
-	 * @param binString the bin string
+	 * @param binString The bin string to be checked.
 	 */
 	public static void checkBinaryString(String binString)
 	{
@@ -49,10 +53,10 @@ public class BinToDec
 	}
 
 	/**
-	 * Convert binary to decimal int.
+	 * Convert Binary string to be converted to decimal int.
 	 *
-	 * @param binString the bin string
-	 * @return the decimal integer.
+	 * @param binString The bin string
+	 * @return The decimal integer.
 	 */
 	public static int convertBinaryToDecimal(String binString)
 	{
