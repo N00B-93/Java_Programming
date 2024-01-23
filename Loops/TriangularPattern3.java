@@ -24,7 +24,7 @@ public class TriangularPattern3
 				System.out.print(" ");
 			}
 
-			// Prints number from count3 to count1.
+			// Prints a sequence of numbers from count3 to count1.
 			for (int count3 = 1; count3 <= count1; count3++)
 			{
 				System.out.printf("%d", count3);

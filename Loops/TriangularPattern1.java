@@ -17,10 +17,13 @@ public class TriangularPattern1
 	{
 		for (int row = 1; row <= 6; row++)
 		{
+			// Prints a sequence of numbers from number to row.
 			for (int number = 1; number <= row; number++)
 			{
 				System.out.printf("%d ", number);
 			}
+
+			// Prints a new line after each row.
 			System.out.println();
 		}
 	}
