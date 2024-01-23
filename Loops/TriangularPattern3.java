@@ -3,8 +3,8 @@ package Loops;
 /*
 	This is a program that displays
 
-			123456
- 			 12345
+						123456
+ 			 			 12345
                           1234
                            123
                             12
