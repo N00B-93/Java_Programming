@@ -18,13 +18,13 @@ public class ReadFromWeb
         // Creates an ArrayList Object to hold the scores.
         ArrayList<Integer> scores = new ArrayList<>();
 
-        // Initializes the URL variable to null.
-        URL url = null;
-
-        try (Scanner scanner = new Scanner(url.openStream()))
+        try
         {
-            // Assigns the url variable to a URL Object.
-            url = new URL("http://liveexample.pearsoncmg.com/data/Scores.txt");
+            // Creates a URL Object with a specified url.
+            URL url = new URL("http://liveexample.pearsoncmg.com/data/Scores.txt");
+
+            // Opens the url stream.
+            Scanner scanner = new Scanner(url.openStream());
 
             // Reads in the data from the website.
             while (scanner.hasNext())
@@ -34,6 +34,7 @@ public class ReadFromWeb
                 else
                     scores.add(scanner.nextInt());
             }
+            scanner.close();
         }
         catch (MalformedURLException ex)
         {
