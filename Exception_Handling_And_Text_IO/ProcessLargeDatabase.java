@@ -5,8 +5,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /*
-	This is a program that reads professors details		from a file 'Salary.txt' and displays the tota		l salary for assistant professors, associate 		professors, and full professors respectively		, and also displays
-	the average salary for assistant professors, as		sociate professors, and full professors, respectively
+	This is a program that reads professors details	from a file 'Salary.txt' and displays the total salary
+	for assistant professors, associate professors, and full professors respectively, and also displays
+	the average salary for assistant professors, associate professors, and full professors, respectively
 */
 
 public class ProcessLargeDatabase
@@ -31,7 +32,7 @@ public class ProcessLargeDatabase
 			int assistantCounter = 0, associateCounter = 0, fullTimeCounter = 0;
 
 			// Reads data from the Salary.txt file, calculate the sum of professors salaries,
-			// and count the number of rofessors in the salaries database.
+			// and count the number of professors in the salaries database.
 			while (input.hasNext())
 			{
 				details = input.nextLine().split(" ");
@@ -66,4 +67,3 @@ public class ProcessLargeDatabase
 		}
 	}
 }
-
