@@ -1,7 +1,7 @@
 package Methods;
 
 /*
-	 An emirp (prime spelled backward) is a nonpalindromic prime number whose reversal is also a prime.
+	 An emirp (prime spelled backward) is a non-palindromic prime number whose reversal is also a prime.
 	 This is program that displays the first 120 emirps,  10 numbers per line, separated by exactly one space.
 */
 
@@ -71,4 +71,3 @@ public class Emirp
 		return true;
 	}
 }
-

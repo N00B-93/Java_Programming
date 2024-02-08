@@ -17,6 +17,13 @@ public class SumOfSeries
 			System.out.printf("%d\t\t%.4f\n", i, sumOfSeries(i));
 	}
 
+	/**
+	 * Return the sum of a series for a given range.
+	 *
+	 * @param numberOfTerms The number of terms to be calculated.
+	 *
+	 * @return The sum of a series up to the given limit.
+	 */
 	public static double sumOfSeries(int numberOfTerms)
 	{
 		double series = 0;

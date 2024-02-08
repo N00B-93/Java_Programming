@@ -8,7 +8,7 @@ import java.util.Scanner;
 	international standard letter/number mapping for telephones.
 */
 
-public class PhoneKeyPads
+public class PhoneKeypads
 {
 	public static void main(String... args)
 	{
@@ -57,4 +57,3 @@ public class PhoneKeyPads
 			return 9;
 	}
 }
-

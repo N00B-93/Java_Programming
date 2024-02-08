@@ -5,7 +5,6 @@ import java.util.Scanner;
 /*
 	This is a program that uses two methods;
 		public static int reverse(int number)
-
 		public static boolean isPalindrome(int number)
 	to determine whether an integer entered by the user is a palindrome or not.
 */
@@ -69,5 +68,3 @@ public class Palindrome
 		return false;
 	}
 }
-			
-

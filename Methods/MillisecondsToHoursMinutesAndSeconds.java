@@ -27,7 +27,7 @@ public class MillisecondsToHoursMinutesAndSeconds
 	}
 
 	/**
-	 * Converts milliseconds to hh:mm:ssformat
+	 * Converts milliseconds to hh:mm:ss format
 	 * 
 	 * @param milliSeconds The millisecond to convert.
 	 *

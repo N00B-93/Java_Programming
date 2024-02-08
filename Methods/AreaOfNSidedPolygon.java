@@ -15,7 +15,7 @@ public class AreaOfNSidedPolygon
 		// Creates a Scanner Object.
 		Scanner input = new Scanner(System.in);
 
-		// Reads in the length of the side of a pentagon and nunber of sides.
+		// Reads in the length of the side of a pentagon and number of sides.
 		System.out.print("\nEnter the number of sides: ");
 		int numberOfSides = input.nextInt();
 
@@ -39,4 +39,3 @@ public class AreaOfNSidedPolygon
 		return (n * Math.pow(side, 2)) / (4 * Math.tan(Math.PI / n));
 	}
 }
-

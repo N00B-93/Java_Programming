@@ -27,22 +27,21 @@ public class ReverseOrder
 	/**
 	 * Reverses an integer and displays the result.
 	 *
-	 * @param n The integet to be reversed.
+	 * @param n The integer to be reversed.
 	 *
 	 * @return Void.
 	 */
 	public static void reverse(int n)
 	{
-		int sum = 0, rem = 0, temp = n;
+		int reverse = 0, remainder = 0, temp = n;
 
 		while (n != 0)
 		{
-			rem = n % 10;  // Extracts a digit.
-			sum = sum * 10 + rem;  // Calculates the reversed number.
+			remainder = n % 10;  // Extracts a digit.
+			reverse = reverse * 10 + remainder;  // Calculates the reversed number.
 			n /= 10;  // Peels of the extracted digit.
 		}
 			// Displays the reversed integer.
-			System.out.printf("\nOriginal number: %d\nReversed number: %d\n", temp, sum);
+			System.out.printf("\nOriginal number: %d\nReversed number: %d\n", temp, reverse);
 	}
 }
-

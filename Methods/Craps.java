@@ -5,9 +5,9 @@ import java.util.Scanner;
 /*
 	This is a program that simulates a 
 	popular Casino gambling game known as 'CRAPS'.
-	If the user rolls 2 or 3 or 12 on the first roll, it is know CRAP and the user loses.
+	If the user rolls 2 or 3 or 12 on the first roll, it is known CRAP and the user loses.
 	If the user rolls 7 or 11 on the first roll, it is known as NATURAL and the user wins.
-	If the user rolls any other number between 1 and 12, a point is established and you user will continue
+	If the user rolls any other number between 1 and 12, a point is established and the user will continue
 	to roll the dice till a 7(loss) is rolled or the user rolls his/her point(win).
 */
 
@@ -27,7 +27,7 @@ public class Craps
 
 			if (point == 2 || point == 3 || point == 12)
 			{
-				// Inform the user that he/she losses if he/she rolls 2, 3 or 12 and exits the game.
+				// Inform the user that he/she loses if he/she rolls 2, 3 or 12 and exits the game.
 				System.out.printf("\nCRAPS!!!\nYou rolled %d\nYOU LOSE!!!\n", point);
 				System.exit(0);
 			}
@@ -81,4 +81,3 @@ public class Craps
 		return die1 + die2;
 	}
 }
-

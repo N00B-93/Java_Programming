@@ -1,12 +1,13 @@
 package Methods;
 
 /*
-	This is a program that converts temperature from Celsius to Fahrenheit and Fahrenheit to Celsius by using methods with the headers;
+	This is a program that converts temperature from Celsius to Fahrenheit and Fahrenheit to Celsius by using methods
+	with the headers;
 			public static double celsiusToFahrenheit(double celsius)
 			public static double fahrenheitToCelsius(fahrenheit)
 */
 
-public class TempConversion
+public class TemperatureConversion
 {
 	public static void main(String... args)
 	{
@@ -45,4 +46,3 @@ public class TempConversion
 		return ((5.0 / 9.0) * (fahrenheit - 32));
 	}
 }
-
