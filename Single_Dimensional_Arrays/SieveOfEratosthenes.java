@@ -9,7 +9,7 @@ import java.util.Scanner;
 	flag, of size n+1, initializing the array to true (assuming every number is a 
 	prime number in the beginning), and iteratively traversing the numbers from 2
 	to n, setting the values of indices that are multiples of other numbers to false.
-	This ptogram uses this algorithm to find all the prime numbers from 2 to a limit
+	This program uses this algorithm to find all the prime numbers from 2 to a limit
 	entered by the user.
 */
 
@@ -32,7 +32,7 @@ public class SieveOfEratosthenes
 		// Fills the boolean array with 'true'.
 		Arrays.fill(sieve, true);
 
-		// Filters out the non prime nunbers.
+		// Filters out the non-prime numbers.
 		filter(sieve);
 
 		// Displays the prime numbers from 2 to limit.
@@ -82,4 +82,3 @@ public class SieveOfEratosthenes
 		return true;
 	}
 }
-
