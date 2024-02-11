@@ -1,6 +1,13 @@
 package Single_Dimensional_Arrays;
 
 /*
+	This is a program that creates an array of integers from 1 to 100,000,000 in ascending order and then
+	calculates the execution time for invoking the methods;
+				public static int linearSearch(int key, int... array)
+			and
+				public static int binarySearch(int key, int... array)
+	to search for the numbers;
+				0; 25,000,000; 50,000,000; 75,000,000; 100,000,000.
 */
 
 public class ExecutionTime
@@ -12,15 +19,31 @@ public class ExecutionTime
 		
 		// Fills up the array with values from 1 to 100000000
 		for (int i = 0; i < array.length; i++)
-			array[i] = i + 1;
+			array[i] = i;
 
+		// Searches for specified keys using Linear search Algorithm.
+		System.out.println("\n\t\tUsing Linear Search");
+		for (int key = 0; key <= 100000001; key += 25000000)
+		{
+			long startTime = System.nanoTime();
+			int index = linearSearch(key, array);
+			long endTime = System.nanoTime();
+			long executionTime = endTime - startTime;
 
-		long startTime = System.nanoTime();
-		int index = linearSearch(1, array);
-		long endTime = System.nanoTime();
-		long executionTime = endTime - startTime;
+			System.out.printf("Key = %d\nIndex Found = %d\nExecution time = %dns\n\n", key, index, executionTime);
+		}
 
+		// searches for a specified key using Binary Search Algorithm.
+		System.out.println("\n\t\tUsing Binary Search");
+		for (int key = 0; key <= 100000001; key += 25000000)
+		{
+			long startTime = System.nanoTime();
+			int index = binarySearch(key, array);
+			long endTime = System.nanoTime();
+			long executionTime = endTime - startTime;
 
+			System.out.printf("Key = %d\nIndex Found = %d\nExecution time = %dns\n\n", key, index, executionTime);
+		}
 	}
 
 	/**
@@ -47,7 +70,7 @@ public class ExecutionTime
 	 * @param array The array containing values.
 	 * @param key The value to be searched for.
 	 *
-	 * @return The index where the key was found, else returns the postion the key should be located.
+	 * @return The index where the key was found, else returns the position the key should be located.
 	 */
 	public static int binarySearch(int key, int... array)
 	{
@@ -66,4 +89,3 @@ public class ExecutionTime
 		return -low -1;
 	}
 }
-
