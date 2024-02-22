@@ -21,7 +21,7 @@ public class SumOfElementsInColumns
         // Reads in elements into the 3x4 matrix
         for (int i = 0; i < 3; i++)
         {
-            System.out.printf("\nEnter the elements of row %d separated by space: ", i);
+            System.out.printf("\nEnter four elements for row %d separated by space: ", i);
             for (int j = 0; j < 4; j++)
                 matrix[i][j] = input.nextDouble();
         }
