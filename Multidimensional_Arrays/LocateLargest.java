@@ -41,7 +41,7 @@ public class LocateLargest
 		// Displays the result.
 		System.out.printf("\nThe location of the largest element is: (%d, %d)\n", location[0], location[1]);
 	}
-	
+
 	/**
 	 * Returns the location of the largest element in a 2-D array.
 	 *
