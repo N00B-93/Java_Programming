@@ -9,7 +9,7 @@ import java.util.Random;
 			public static void shuffle(int[][] matrix)
 	and also using the method;
 			public static void printMatrix(int[][] matrix)
-			to display the matrix before and after shuffling.
+	to display the matrix before and after shuffling.
  */
 
 public class ShuffleRows
