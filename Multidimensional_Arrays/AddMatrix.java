@@ -3,7 +3,7 @@ package Multidimensional_Arrays;
 import java.util.Scanner;
 
 /*
-	    This is a program that uses a function with the header;
+	    This is a program that uses a method with the header;
                 public static double[][] addMatrix(double[][] mat1, double[][] mat2)
     	to calculate the sum of two 3x3 matrices.
  */
