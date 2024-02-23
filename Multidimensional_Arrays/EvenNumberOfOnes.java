@@ -17,4 +17,31 @@ public class EvenNumberOfOnes
 		// Creates a 2-D 6x6 matrix.
 		int[][] matrix = new int[6][6];
 
+		// Populates the matrix with 0's and 1's.
+		for (int row = 0; row < matrix.length; row++)
+			for (int col = 0; col < matrix.length; col++)
+				matrix[row][col] = random.nextInt(2);
+
+		// Displays the matrix.
+		System.out.println("\nThe generated matrix is: ")
+		printMatrix(matrix);
+	}
+
+	/**
+	 * Displays the elements of a matrix.
+	 *
+	 * @param matrix The matrix to be displayed.
+	 */
+	public static void printMatrix(int[][] matrix)
+	{
+		for (int row = 0; row < matrix.length; row++)
+		{
+			for (int col = 0; col < matrix.length; col++)
+				System.out.printf("%d ", matrix[row][col]);
+			System.out.println();
+		}
+	}
+}
+
+
 		
