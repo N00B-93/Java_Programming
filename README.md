@@ -1,4 +1,5 @@
 # Java_Programming
+![JavaProgramming](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmikeoshadami.com%2Farticles%2F5-nigerian-java-developers-you-should-follow%2F&psig=AOvVaw3pcn-ZLoI6tkUhgwIFVJ31&ust=1708896293611000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNiOltftxYQDFQAAAAAdAAAAABAD)
 
 Welcome to my Java learning repository! Here you'll find a collection of Java programs that I've written while learning the language. Each directory is designed to showcase different concepts and techniques in Java.
 
