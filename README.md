@@ -36,7 +36,8 @@ Here's a brief overview of the Java concepts included in this repository:
 
 Each program is contained in its own directory along with any necessary resources or instructions. To run a program, follow;
 ```bash
-java fileName.java```
+java fileName.java
+```
 
 ## Contributing
 
