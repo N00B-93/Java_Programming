@@ -90,7 +90,7 @@ public class Employee
     @Override
     public String toString()
     {
-        return "Employee Name: " + this.getEmployeeName() + "\n" + "Employee ID: " + this.getEmployeeID() + "\n" +
+        return "\nEmployee Name: " + this.getEmployeeName() + "\n" + "Employee ID: " + this.getEmployeeID() + "\n" +
                 "Date Hired: " + this.getDateHired();
     }
 }
