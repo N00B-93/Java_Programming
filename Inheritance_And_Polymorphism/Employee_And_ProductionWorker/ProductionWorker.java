@@ -30,7 +30,6 @@ public class ProductionWorker extends Employee
     {
         if (this.shift == 1) return "Day";
         return "Night";
-
     }
 
     /**
