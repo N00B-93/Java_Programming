@@ -25,7 +25,7 @@ public class Main
         double carpetCost = keyBoard.nextDouble();
 
         // Creates a RoomCarpet Object.
-        RoomCarpet roomCarpet= new RoomCarpet(new RoomDimension(length, breadth), carpetCost);
+        RoomCarpet roomCarpet = new RoomCarpet(new RoomDimension(length, breadth), carpetCost);
 
         // Displays the total cost of the carpet.
         System.out.printf("\nThe total cost of the carpet is: $ %.2f\n", roomCarpet.getTotalCost());
