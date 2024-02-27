@@ -32,7 +32,7 @@ public class Odometer
     {
         if (this.mileage < 999_999)
             this.mileage++;
-        else if (this.mileage >999_999)
+        else if (this.mileage >= 999_999)
             this.mileage = 0;
     }
 
