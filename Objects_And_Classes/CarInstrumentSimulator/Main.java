@@ -1,8 +1,6 @@
-package CarInstrumentSimulator;
+package Objects_And_Classes.CarInstrumentSimulator;
 
 import java.util.Scanner;
-import CarInstrumentSimulator.Odometer;
-import CarInstrumentSimulator.FuelGauge;
 
 public class Main
 {
@@ -12,11 +10,15 @@ public class Main
 		Scanner input = new Scanner(System.in);
 		
 		// Prompts the user to enter the amount of fuel for the vehicle.
-		double amountOfFuel = input.nextDouble();
+		System.out.printf("\nEnter the amount of Fuel: ");
+		int amountOfFuel = input.nextInt();
 
-		// Prompts the user to enter the cost per gallon of fuel.
-		System.out.printf("\nEnter the cost per gallon of fuel: $ ");
-		double costPerGallon = input.nextDouble();
+		while (amountOfFuel > 15 || amountOfFuel < 0)
+		{
+			System.out.println("\nInvalid amount of fuel, Tank capacity is 15 gallons!");
+			System.out.printf("\nEnter the amount of Fuel: ");
+			amountOfFuel = input.nextInt();
+		}
 
 		// Prompts the user to enter a mileage.
 		System.out.printf("\nEnter the odometer mileage: ");
@@ -30,9 +32,12 @@ public class Main
 		
 		// Filling the fuelGauge with fuel.
 		System.out.println("\nFilling up the tank...");
-		while (fuelGauge.getAmountOfFuel() <= 15)
+		while (fuelGauge.getAmountOfFuel() != 15)
 		{
 			fuelGauge.addFuel();
+			System.out.printf("\n1 litre added, current amount of fuel: %d gallons\n", fuelGauge.getAmountOfFuel());
+			if (fuelGauge.getAmountOfFuel() == 15)
+				System.out.println("\nTank filled!");
 		}
 
 		// Increases the mileage and decreases fuel till the tank runs out of fuel.
@@ -40,9 +45,8 @@ public class Main
 		{
 			odometer.incrementMileage();
 			odometer.decreaseGauge(fuelGauge);
-			System.out.printf("\nCurrentMikeage: %d\n", odometer.getMileage());
-			System.out.printf("\nFuel Remaining: %d gallons\n", fuelGauge.getAmountOfFuel());
+			System.out.printf("\nCurrentMileage: %d\n", odometer.getMileage());
+			System.out.printf("Fuel Remaining: %d gallons\n", fuelGauge.getAmountOfFuel());
 		}
 	}
 }
-
