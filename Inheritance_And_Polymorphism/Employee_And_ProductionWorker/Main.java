@@ -22,6 +22,7 @@ public class Main
             System.out.println("\nEmployeeID length must be 5 characters!");
             System.exit(2);
         }
+
         if (!isValidEmployeeID(employeeID))
         {
             System.out.println("\nInvalid Employee ID format!\nEach digit of the first 3 numbers must be between 0 - 9\n" +
