@@ -3,14 +3,14 @@ package Objects_And_Classes.CarInstrumentSimulator;
 public class FuelGauge
 {
     // FuelGauge amountOfFuel attribute.
-    private double amountOfFuel;
+    private int amountOfFuel;
 
     /**
      * Instantiates a new Fuel gauge Object.
      *
      * @param amountOfFuel The initial amount of fuel.
      */
-    public FuelGauge(double amountOfFuel)
+    public FuelGauge(int amountOfFuel)
     {
         this.amountOfFuel = amountOfFuel;
     }
@@ -20,7 +20,7 @@ public class FuelGauge
      *
      * @return The amount of fuel available.
      */
-    public double getAmountOfFuel()
+    public int getAmountOfFuel()
     {
         return this.amountOfFuel;
     }
