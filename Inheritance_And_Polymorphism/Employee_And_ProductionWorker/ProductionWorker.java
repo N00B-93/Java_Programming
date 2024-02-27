@@ -63,4 +63,15 @@ public class ProductionWorker extends Employee
     {
         this.hourlyRate = newRate;
     }
+
+    /**
+     * A String describing the ProductionWorker Object.
+     *
+     * @return Description of the ProductionWorker Object.
+     */
+    @Override
+    public String toString()
+    {
+        return super.toString() + "\nShift: " + this.getShift() + "\n" + "Hourly Rate: $ " + this.getHourlyRate();
+    }
 }
