@@ -17,6 +17,9 @@ public class Ship
         this.yearBuilt = yearBuilt;
     }
 
+    // No-arg Constructor.
+    public Ship(){}
+
     /**
      * Gets the Ship's name.
      *
