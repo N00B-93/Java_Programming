@@ -55,7 +55,7 @@ public class Employee
     /**
      * Sets employee ID to the given value.
      *
-     * @param newName The new ID.
+     * @param newID The new ID.
      */
     public void setEmployeeID(String newID)
     {
