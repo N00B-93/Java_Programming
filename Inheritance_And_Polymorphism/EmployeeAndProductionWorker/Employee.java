@@ -1,4 +1,4 @@
-package Inheritance_And_Polymorphism.Employee_And_ProductionWorker;
+package Inheritance_And_Polymorphism.EmployeeAndProductionWorker;
 
 import java.util.Date;
 public class Employee

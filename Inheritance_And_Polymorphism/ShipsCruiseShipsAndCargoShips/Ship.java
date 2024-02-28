@@ -1,4 +1,4 @@
-package Inheritance_And_Polymorphism.Ships_CruiseShips_And_CargoShips;
+package Inheritance_And_Polymorphism.ShipsCruiseShipsAndCargoShips;
 
 public class Ship
 {

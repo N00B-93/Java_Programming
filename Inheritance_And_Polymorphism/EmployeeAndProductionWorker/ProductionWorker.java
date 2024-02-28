@@ -1,4 +1,4 @@
-package Inheritance_And_Polymorphism.Employee_And_ProductionWorker;
+package Inheritance_And_Polymorphism.EmployeeAndProductionWorker;
 
 public class ProductionWorker extends Employee
 {
