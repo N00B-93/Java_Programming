@@ -3,7 +3,8 @@ package Exception_Handling_And_Text_IO;
 import java.util.Scanner;
 
 /*
-
+	In this program, an Object of the class TestScore is created and the user is prompted to enter 10
+	scores each separated by space. If a score is less than 0 or greater than 100, an IllegalArgumentException is thrown else the average of the scores are displayed.
  */
 
 public class TestScore
@@ -78,5 +79,5 @@ public class TestScore
             System.out.println(ex.getMessage());
         }
     }
-
 }
+
