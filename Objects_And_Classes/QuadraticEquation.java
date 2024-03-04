@@ -1,4 +1,4 @@
-package Object_And_Classes;
+package Objects_And_Classes;
 
 import java.util.Scanner;
 
