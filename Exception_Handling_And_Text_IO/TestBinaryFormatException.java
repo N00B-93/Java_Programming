@@ -1,4 +1,4 @@
-package Exception_Handling_And_TextIO;
+package Exception_Handling_And_Text_IO;
 
 import java.util.Scanner;
 
