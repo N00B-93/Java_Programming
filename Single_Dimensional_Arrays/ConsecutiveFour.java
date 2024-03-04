@@ -1,4 +1,4 @@
-package Single_Dimesional_Array;
+package Single_Dimesional_Arrays;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class ConsecutiveFour
 		Scanner input = new Scanner(System.in);
 
 		// Prompts the user to enter the number of elements in the array.
-		System.out.print("\nEnter the number of values greater than 4: ");
+		System.out.print("\nEnter the number of elements in the list(value should be greater than 4): ");
 		int n = input.nextInt();
 
 		// Terminates the program if the number of elements is <= 4.
