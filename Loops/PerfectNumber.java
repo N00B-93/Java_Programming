@@ -1,4 +1,4 @@
-package Loop;
+package Loops;
 
 /*
 	A positive integer is called a perfect number if it is equal to
