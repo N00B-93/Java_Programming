@@ -3,7 +3,8 @@ package Objects_And_Classes;
 /**
  * The type Temperature.
  */
-public class Temperature {
+public class Temperature
+{
     // Attribute holding the temperature in Fahrenheit.
     private double fahrenheitTemperature;
 
@@ -30,7 +31,8 @@ public class Temperature {
      *
      * @param fahrenheitTemperature The new Fahrenheit temperature.
      */
-    public void setFahrenheitTemperature(double fahrenheitTemperature) {
+    public void setFahrenheitTemperature(double fahrenheitTemperature)
+    {
         this.fahrenheitTemperature = fahrenheitTemperature;
     }
 
@@ -40,7 +42,7 @@ public class Temperature {
      * @return The kelvin temperature equivalent of the Temperature Object.
      */
     public double getKelvinTemperature() {
-        return ((5 / 9.0) * this.fahrenheitTemperature - 32) + 273;
+        return 5 / 9.0 * (this.fahrenheitTemperature - 32) + 273;
     }
 
     /**
@@ -49,6 +51,6 @@ public class Temperature {
      * @return The Celsius temperature equivalent of the Temperature Object.
      */
     public double getCelsius() {
-        return (5 / 9) * (this.fahrenheitTemperature - 32);
+        return (5 / 9.0) * (this.fahrenheitTemperature - 32);
     }
 }
