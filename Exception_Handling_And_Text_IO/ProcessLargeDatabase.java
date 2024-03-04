@@ -17,7 +17,7 @@ public class ProcessLargeDatabase
 		try
 		{
 			// Creates a file Object.
-			File file = new File("Salary.txt");
+			File file = new File("Exception_Handling_And_Text_IO/Salary.txt");
 
 			// Creates a Scanner Object.
 			Scanner input = new Scanner(file);
