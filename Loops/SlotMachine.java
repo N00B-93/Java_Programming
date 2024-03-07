@@ -76,13 +76,13 @@ public class SlotMachine
 			if (reel[0].equals(reel[1]) && reel[1].equals(reel[2]))
 			{
 				// Displays a message informing the player that he/she has won the game.
-				System.out.printf("\nJackpot!!1\nYou win $ %.2f\n", bet * 3);
+				System.out.printf("\nJackpot!!!\nYou win $ %.2f\n", bet * 3);
 				amountWon += bet * 3;
 			}
 			else if (reel[0].equals(reel[1]) || reel[1].equals(reel[2]) || reel[0].equals(reel[2]))  // Checks if two faces of the reel is the same.
 			{
 				// Displays a message informing the player that he/she has won the game.
-				System.out.printf("\nJackpot!!1\nYou win $ %.2f\n", bet * 2);
+				System.out.printf("\nJackpot!!!\nYou win $ %.2f\n", bet * 2);
 				amountWon += bet * 2;
 			}
 			else
