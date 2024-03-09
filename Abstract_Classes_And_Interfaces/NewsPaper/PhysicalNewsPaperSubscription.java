@@ -16,18 +16,21 @@ public class PhysicalNewsPaperSubscription extends NewsPaperSubscription
     }
 
     /**
-     * Sets the address to the given value if it contains at least one digit. else, displays an error message
-     * and sets the rate to 0.
+     * Sets the address to the given value and also sets the rate to $ 15.0 if the address contains at least one digit.
+     * else, displays an error message and sets the rate to $ 0.0.
      * @param address The subscriber's address
      */
     @Override
     public void setAddress(String address)
     {
         if (countDigits(address) >= 1)
+        {
             this.address = address;
+            this.rate = 15.0;
+        }
         else
         {
-            System.out.println("\nInvalid Address!\nYour Address should contain at least one digit.");
+            System.out.println("\nInvalid Address!\nYour Address must contain at least one digit.");
             this.rate = 0.0;
         }
     }
@@ -44,7 +47,7 @@ public class PhysicalNewsPaperSubscription extends NewsPaperSubscription
 
         for (int i = 0; i < address.length(); i++)
         {
-            if (Character.isLetter(address.charAt(i)))
+            if (Character.isDigit(address.charAt(i)))
                 digitCounter++;
         }
         return digitCounter;
