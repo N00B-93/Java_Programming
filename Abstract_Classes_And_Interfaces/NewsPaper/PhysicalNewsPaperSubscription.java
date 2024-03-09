@@ -1,2 +1,6 @@
-package Abstract_Classes_And_Interfaces.NewsPaper;public class PhysicalNewsPaperSubscription {
+package Abstract_Classes_And_Interfaces.NewsPaper;
+
+public class PhysicalNewsPaperSubscription
+{
+    
 }
