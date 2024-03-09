@@ -7,10 +7,9 @@ public abstract class NewsPaperSubscription
     protected String address;
     protected double rate;
 
-    public  NewsPaperSubscription(String name, String address)
+    public  NewsPaperSubscription(String name)
     {
         this.name = name;
-        this.address =  address;
     }
 
     /**
