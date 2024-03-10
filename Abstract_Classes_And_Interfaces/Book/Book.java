@@ -7,7 +7,7 @@ public abstract class Book
 {
     // Attributes of a book Object.
     private String title;
-    protected double price = 50;
+    protected double price;
 
     /**
      * Instantiates a new Book Object.
