@@ -3,8 +3,8 @@ package Abstract_Classes_And_Interfaces.Insurance;
 public abstract class Insurance
 {
     // Attributes of an Insurance Object.
-    private String insuranceType;
-    private double monthlyPrice;
+    protected String insuranceType;
+    protected double monthlyPrice;
 
     /**
      * Instantiates a new Insurance Object.
