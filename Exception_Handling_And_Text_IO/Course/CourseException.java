@@ -6,8 +6,9 @@ package Exception_Handling_And_Text_IO.Course;
 public class CourseException extends Exception
 {
     // Attributes of a CourseException Object.
-    private String department;
-    private int courseNumber, numberOfCredits;
+    protected String department;
+    protected int courseNumber;
+    protected double numberOfCredits;
 
     /**
      * Instantiates a new Course exception.
@@ -16,7 +17,7 @@ public class CourseException extends Exception
      * @param courseNumber The course number.
      * @param numberOfCredits The number of credits.
      */
-    public CourseException(String department, int courseNumber, int numberOfCredits)
+    public CourseException(String department, int courseNumber, double numberOfCredits)
     {
         this.department = department;
         this.courseNumber = courseNumber;
@@ -30,8 +31,8 @@ public class CourseException extends Exception
     @Override
     public String getMessage()
     {
-        if (this.department.length() != 3 && (!allLetters(this.department)))
-            return "\nInvalid Department Name\nDepartment name should consist of three letters.";
+        if (this.department.length() != 3 && (!(this.department.matches("[A-Z]+"))))
+            return "\nInvalid Department Name\nDepartment name should consist of three uppercase letters.";
         if (this.courseNumber < 100 || this.courseNumber > 499)
             return "\nInvalid Course Number\nCourse Number must be a three digit number >= 100 and <= 499";
         return "\nCredits must be >= 0.5 and <= 6.0";
@@ -43,7 +44,7 @@ public class CourseException extends Exception
      * @param string The String to be processed.
      * @return true if all the elements of a String are letters else, false.
      */
-    public static boolean allLetters(String string)
+    /*public static boolean allLetters(String string)
     {
         for (int i = 0; i < string.length(); i++)
         {
@@ -53,5 +54,5 @@ public class CourseException extends Exception
                 return false;
         }
         return true;
-    }
+    }*/
 }
