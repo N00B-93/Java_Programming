@@ -2,6 +2,11 @@ package Elementary_Programming;
 
 import java.util.Scanner;
 
+/*
+	This program prompts the user to enter a meal charge and then computes the tax(6.75% of meal charge), tip(20% of the sum of meal charge and tax), 
+	and the total bill(meal charge plus tax plus tip), then displays the receipt on the screen.
+*/
+
 public class ResturantBill
 {
 	public static void main(String... args)
