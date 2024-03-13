@@ -7,7 +7,8 @@ import java.util.Scanner;
 		Package A: For $9.95 per month 10 hours of access are provided. Additional hours are $2.00 per hour.
 		Package B: For $13.95 per month 20 hours of access are provided. Additional hours are $1.00 per hour.
 		Package C: For $19.95 per month unlimited access is provided.
-	This progran prompts the user to enter the letter of the package the customer has purchased (A, B, or C) and the number of hours that were used.
+	This program prompts the user to enter the letter of the package the customer has purchased (A, B, or C) and the
+	number of hours that were used.
 	It then displays the subscription package's information and the user's total charges.
 */
 
@@ -37,13 +38,13 @@ public class InternetServiceProvider
 
 		switch (packageSubscription)
 		{
-			// Displays subcription package A's details.
+			// Displays subscription package A's details.
 			case "A":
 				if (numberOfHours <= 10)
 					totalCost = 9.95;
 				else
 					totalCost = 9.95 + (numberOfHours - 10) * 2;
-				System.out.printf("\nSubcription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
+				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
 				break;
 			// Displays subscription package B's details.
 			case "B":
@@ -51,14 +52,13 @@ public class InternetServiceProvider
 					totalCost = 13.95;
 				else
 					totalCost = 13.95 + (numberOfHours - 20) * 1;
-				System.out.printf("\nSubcription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
+				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
 				break;
 			// Displays subscription package C's details.
 			case "C":
 				totalCost = 19.95;
-				System.out.printf("\nSubcription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
+				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
 				break;
 		}
 	}
 }
-
