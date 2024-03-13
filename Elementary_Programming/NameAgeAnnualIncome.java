@@ -3,7 +3,7 @@ package Elementary_Programming;
 import java.util.Scanner;
 
 /*
-	This is a program that promps the user to enter his/her name, age and desired income and then display this 
+	This is a program that prompts the user to enter his/her name, age and desired income and then display this
 	information in form of a comprehension.
 */
 
@@ -30,4 +30,3 @@ public class NameAgeAnnualIncome
 		System.out.printf("\nMy name is %s, my age is %d and\nI hope to earn $ %.2f per year.\n", name, age, desiredIncome);
 	}
 }
-
