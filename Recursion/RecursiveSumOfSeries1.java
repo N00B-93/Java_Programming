@@ -6,7 +6,7 @@ package Recursion;
     to return the sum of the first n terms of the series i / (i + 1) for n = 1, 2, 3, ..., 20.
  */
 
-public class RecursiveSumOfSeries
+public class RecursiveSumOfSeries1
 {
     public static void main(String[] args)
     {
