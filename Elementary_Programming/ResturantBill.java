@@ -31,7 +31,7 @@ public class ResturantBill
 		double totalBill = mealChargeAndTax + tip;
 
 		// Displays the result.
-		System.out.println("##########################Resturant Bill##########################");
+		System.out.println("\n##########################Resturant Bill##########################");
 		System.out.printf("\n\t\tMeal Charge: $ %.2f\n", mealCharge);
 		System.out.printf("\n\t\tTax: $ %.2f\n", tax);
 		System.out.printf("\n\t\tTip: $ %.2f\n", tip);
@@ -39,4 +39,3 @@ public class ResturantBill
 		System.out.println("##################################################################");
 	}
 }
-
