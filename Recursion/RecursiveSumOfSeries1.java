@@ -12,6 +12,7 @@ public class RecursiveSumOfSeries1
     {
         // Displays the sum of the series for i = 1, 2, 3, ..., 20.
         System.out.println("i\t\tm(i)");
+        System.out.println("----------------");
         for (int i = 1; i <= 20; i++)
             System.out.printf("%d\t\t%.4f\n", i, recursiveSumOfSeries(i));
     }
@@ -22,7 +23,7 @@ public class RecursiveSumOfSeries1
      * @param numberOfTerms The number of terms.
      * @return The sum of the first n terms.
      */
-    public static double recursiveSumOfSeries(int numberOfTerms)
+    private static double recursiveSumOfSeries(int numberOfTerms)
     {
         if (numberOfTerms == 1)
             return 0.5;
