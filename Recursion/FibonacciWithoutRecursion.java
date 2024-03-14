@@ -3,6 +3,11 @@ package Recursion;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/*
+    This is a program that prompts the user to enter an index and then displays the fibonacci number that corresponds
+    to that index.
+ */
+
 public class FibonacciWithoutRecursion
 {
     public static void main(String[] args)
