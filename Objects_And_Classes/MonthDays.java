@@ -2,6 +2,11 @@ package Objects_And_Classes;
 
 import java.util.Scanner;
 
+/*
+	This is a program that prompts the user to enter an integer from 1 to 12 representing a month and also prompts the
+	user to enter a year. The program then displays the number of days in the month.
+ */
+
 /**
  * The type MonthDays
  */
@@ -22,11 +27,17 @@ public class MonthDays
 		this.year = year;
 	}
 
+	/**
+	 * This returns the number of days for a particular month.
+	 *
+	 * @return The number of days
+	 */
 	public int getNumberOfDays()
 	{
 		boolean flag;
 		int numberOfDays = 0;
 
+		// Checks if a year is leap.
 		if ((this.year % 4 == 0 && this.year % 100 != 0) || this.year % 400 == 0)
 			flag = true;
 		else
@@ -63,6 +74,7 @@ public class MonthDays
 	{
 		// Creates a Scanner Object.
 		Scanner input = new Scanner(System.in);
+
 		int month, year;
 
 		while (true)
@@ -86,5 +98,3 @@ public class MonthDays
 		System.out.printf("\nNumber of Days: %d\n", monthDays.getNumberOfDays());
 	}
 }
-
-
