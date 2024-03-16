@@ -5,7 +5,8 @@ import java.util.Scanner;
 /*
 	This is a program that predicts the size of the population of organisms. The program prompts the 
 	user to enter the starting number of organisms, their average daily population increase 
-	(as a percentage), and the number of days they will multiply. The program then uses a loop to display the size of the population each day.
+	(as a percentage), and the number of days they will multiply. The program then uses a loop to display the size of the
+	population each day.
 */
 
 public class Population
@@ -31,8 +32,8 @@ public class Population
 			System.out.print("\nEnter number of days organisms will be left to multiply: ");
 			numberOfDays = input.nextInt();
 
-			// Breaks out of the loop if the starting number of organisms >= 2, average daily population increse is > 0 and the number of days
-			// the organisms are left to multiply is >= 1.
+			// Breaks out of the loop if the starting number of organisms >= 2, average daily population increase is > 0
+			// and the number of days the organisms are left to multiply is >= 1.
 			if (startingNumberOfOrganisms >= 2 && dailyPopulationIncrease >= 0 && numberOfDays >= 1)
 				break;
 			else if (dailyPopulationIncrease < 0)
@@ -55,4 +56,3 @@ public class Population
 
 	}
 }
-
