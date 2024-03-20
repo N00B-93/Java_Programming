@@ -2,6 +2,11 @@ package Objects_And_Classes;
 
 import java.util.Scanner;
 
+/*
+	This is a program that prompts the user to enter his/her name, apartment number, rent amount and term(number of month),
+	then creates a Lease Object and displays information about the user's rent.
+ */
+
 /**
  * The type Lease.
  */
@@ -148,7 +153,47 @@ public class Lease
 
 	public static void main(String args[])
 	{
-		
-	}
+		// Creates a Scanner Object.
+		Scanner input = new Scanner(System.in);
 
+		// Creates a reference to a Lease Object.
+		Lease lease;
+
+		while (true)
+		{
+			// Prompts the user to enter the apartment number.
+			System.out.printf("\nEnter Apartment number(100 - 999): ");
+			int apartmentNumber = input.nextInt();
+
+			if (apartmentNumber < 100 || apartmentNumber > 999)
+			{
+				System.out.println("\nApartment number must be in the range 100 - 999!!!");
+				continue;
+			}
+
+			input.nextLine();
+
+			// Prompts the tenant to enter his/her name.
+			System.out.printf("\nEnter tenant name: ");
+			String tenantName = input.nextLine();
+
+			// Prompts the user to enter his/her rent amount.
+			System.out.printf("\nEnter your rent amount: $ ");
+			double rent = input.nextDouble();
+
+			// Prompts the user to enter the term(number 0f months).
+			System.out.printf("\nEnter the term(number of months): ");
+			int term = input.nextInt();
+
+			if (apartmentNumber >= 100 && apartmentNumber <= 999)
+			{
+				lease = new Lease(tenantName, apartmentNumber, rent, term);
+				break;
+			}
+		}
+
+		// Displays information about the tenant's lease.
+		System.out.println("\n\t\tLease Information");
+		System.out.println(lease.toString());
+	}
 }
