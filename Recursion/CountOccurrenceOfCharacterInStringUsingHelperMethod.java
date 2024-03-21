@@ -13,7 +13,7 @@ public class CountOccurrenceOfCharacterInStringUsingHelperMethod
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
-        // Prompts the suer to enter a String.
+        // Prompts the user to enter a String.
         System.out.printf("\nEnter a String: ");
         String string = input.nextLine();
 
