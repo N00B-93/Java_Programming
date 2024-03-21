@@ -7,7 +7,7 @@ import java.util.Scanner;
 	reverse using a recursive method and a recursive helper method.
 */
 
-public class PrintStringInReverseUsingRecursiveHelperMethod
+public class PrintStringInReverseUsingHelperMethod
 {
 	public static void main(String... args)
 	{
@@ -15,7 +15,7 @@ public class PrintStringInReverseUsingRecursiveHelperMethod
 		Scanner input = new Scanner(System.in);
 
 		// Prompts the user to enter a String to be displayed in reverse.
-		System.out.printf("\nEnter a String to be diplayed in reverse: ");
+		System.out.printf("\nEnter a String to be displayed in reverse: ");
 		String string = input.nextLine();
 
 		// Displays the String in reverse.
@@ -25,11 +25,22 @@ public class PrintStringInReverseUsingRecursiveHelperMethod
 		System.out.println();
 	}
 
+	/**
+	 * Display a String in reverse by making a call to another recursive function.
+	 *
+	 * @param string The String to be displayed in reverse.
+	 */
 	public static void reverseDisplay(String string)
 	{
 		reverseDisplayHelper(string, string.length() - 1);
 	}
 
+	/**
+	 * Receives a String and an index from another recursive method and then displays the String in reverse.
+	 *
+	 * @param string The String to be displayed in reverse.
+	 * @param high The index of the last character in the String.
+	 */
 	public static void reverseDisplayHelper(String string, int high)
 	{
 		if (high < 0)
@@ -41,4 +52,3 @@ public class PrintStringInReverseUsingRecursiveHelperMethod
 		}
 	}
 }
-
