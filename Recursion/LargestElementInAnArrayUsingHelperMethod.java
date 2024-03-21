@@ -8,7 +8,7 @@ import java.util.Scanner;
     using a recursive method and a recursive helper method.
  */
 
-public class LargestElementInAnArray
+public class LargestElementInAnArrayUsingHelperMethod
 {
     public static int max = 0;
 
@@ -55,7 +55,7 @@ public class LargestElementInAnArray
     }
 
     /**
-     * This returns the largest element in a list of numbers by making a call to a recursive helper fubction.
+     * This returns the largest element in a list of numbers by making a call to a recursive helper method.
      *
      * @param list The list whose largest element is to be determined.
      * @return The largest element in the list
