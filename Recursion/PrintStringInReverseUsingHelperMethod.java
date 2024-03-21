@@ -26,7 +26,7 @@ public class PrintStringInReverseUsingHelperMethod
 	}
 
 	/**
-	 * Display a String in reverse by making a call to another recursive function.
+	 * Display a String in reverse by making a call to another recursive Method.
 	 *
 	 * @param string The String to be displayed in reverse.
 	 */
