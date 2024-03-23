@@ -27,6 +27,13 @@ public class Factorial
                 System.out.printf("\nEnter an Integer whose factorial is to be determined: ");
                 String number = keyBoard.next();
 
+                // Displays an error message and prompts the user to enter a positive integer if user input is < 0.
+                if (Integer.parseInt(number) < 0)
+                {
+                    System.out.printf("\nInvalid input, Use positive integers only.");
+                    continue;
+                }
+
                 // Creates a BiInteger Object.
                 integer = new BigInteger(number);
             }
