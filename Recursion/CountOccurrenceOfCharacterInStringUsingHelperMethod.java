@@ -9,20 +9,32 @@ import java.util.Scanner;
 
 public class CountOccurrenceOfCharacterInStringUsingHelperMethod
 {
-    public static void main(String[] args) {
-        // Creates a Scanner Object.
-        Scanner input = new Scanner(System.in);
+    public static void main(String[] args)
+    {
+        while (true)
+        {
+            try
+            {
+                // Creates a Scanner Object.
+                Scanner input = new Scanner(System.in);
 
-        // Prompts the user to enter a String.
-        System.out.printf("\nEnter a String: ");
-        String string = input.nextLine();
+                // Prompts the user to enter a String.
+                System.out.printf("\nEnter a String: ");
+                String string = input.nextLine();
 
-        // Prompts the user to enter a Character.
-        System.out.printf("\nEnter the character to be counted: ");
-        char character = input.nextLine().charAt(0);
-	
-	// Displays the number of occurrence of the character in the String.
-	System.out.printf("\nThe number of occurrence of '%c' in '%s' is: %d\n\n", character, string, count(string, character));
+                // Prompts the user to enter a Character.
+                System.out.printf("\nEnter the character to be counted: ");
+                char character = input.nextLine().charAt(0);
+
+                // Displays the number of occurrence of the character in the String.
+                System.out.printf("\nThe number of occurrence of '%c' in '%s' is: %d\n\n", character, string, count(string, character));
+                break;
+            }
+            catch (StringIndexOutOfBoundsException stringIndexOutOfBoundsException)
+            {
+                System.out.println("\nInvalid Input, Use a valid String.");
+            }
+        }
     }
 
     /**
