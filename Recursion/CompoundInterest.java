@@ -7,7 +7,7 @@ import java.util.InputMismatchException;
 
 /*
 	This is a program that prompts the user to enter an amount to be deposited, the interest rate and the 
-	numberb of years the amount will be invested and then display the amount invested plus the interest accrued using recursion.
+	number of years the amount will be invested and then display the amount invested plus the interest accrued using recursion.
 */
 
 public class CompoundInterest
@@ -54,11 +54,11 @@ public class CompoundInterest
 	}
 	
 	/**
-	 * This return the sum of an amount initially invested and the interest accrued through the investement years.
+	 * This return the sum of an amount initially invested and the interest accrued through the investment years.
 	 * @param amountDeposited The amount initially deposited.
 	 * @param interestRate The interest rate.
 	 * @param numberOfYears The number of years the amount is invested.
-	 * @return The sum of the amount invested and the interest accrued over the investement years.
+	 * @return The sum of the amount invested and the interest accrued over the investment years.
 	 */
 	public static double compoundInterest(double amountDeposited, double interestRate, int numberOfYears)
 	{
@@ -73,4 +73,3 @@ public class CompoundInterest
 		}
 	}
 }
-
