@@ -18,9 +18,9 @@ public class GenerateVehiclePlateNumber
         int fourDigits = random.nextInt(1000, 10000);
 
         // Generates three characters.
-        char character1 = (char) random.nextInt(65, 97);
-        char character2 = (char) random.nextInt(65, 97);
-        char character3 = (char) random.nextInt(65, 97);
+        char character1 = (char) random.nextInt(65, 91);
+        char character2 = (char) random.nextInt(65, 91);
+        char character3 = (char) random.nextInt(65, 91);
 
         // Displays the result.
         System.out.printf("\nThe plate number is: %c%c%c%s\n", character1, character2, character3, ("" + fourDigits));
