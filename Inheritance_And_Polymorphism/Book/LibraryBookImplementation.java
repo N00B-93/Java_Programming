@@ -20,6 +20,20 @@ public class LibraryBookImplementation implements LibraryBook
      * @param author The LibraryBookImplementation author.
      * @param title The LibraryBookImplementation's title.
      * @param ISBN The LibraryBookImplementation's ISBN.
+     */
+    public LibraryBookImplementation(String author, String title, String ISBN)
+    {
+        this.author = author;
+        this.title = title;
+        this.ISBN = ISBN;
+    }
+
+    /**
+     * Instantiates a new LibraryBookImplementation Object.
+     *
+     * @param author The LibraryBookImplementation author.
+     * @param title The LibraryBookImplementation's title.
+     * @param ISBN The LibraryBookImplementation's ISBN.
      * @param dueDate The LibraryBookImplementation's due date.
      * @param currentHolder The LibraryBookImplementation's current holder.
      */
