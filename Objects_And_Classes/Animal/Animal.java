@@ -1,4 +1,4 @@
-package Objects_And_Classes;
+package Objects_And_Classes.Animal;
 
 /**
  * The type Animal.
@@ -57,7 +57,7 @@ public class Animal
 	 *
 	 * @param The Animal population.
 	 */
-	public static void setPopulation(int population)
+	public void setPopulation(int population)
 	{
 		this.population = population;
 	}
@@ -90,7 +90,8 @@ public class Animal
 	@Override
 	public String toString()
 	{
-		return "Specie: " + this.specie + "\n" + "Population: " + this.population + "\n" + "Growth Rate: "  + this.growthRate;
+		return "Specie: " + this.specie + "\n" + "Population: " + this.population + "\n" + "Growth Rate: "  +
+				this.growthRate + "%";
 	}
 	
 	/**
@@ -100,7 +101,6 @@ public class Animal
 	 *
 	 * @return true if both Animal have the same specie, else false.
 	 */
-	@Override
 	public boolean equals(Animal another)
 	{
 		return this.specie == another.getSpecie();
@@ -113,7 +113,7 @@ public class Animal
 	 */
 	public boolean isEndangered()
 	{
-i		return this.growthRate > 0.0;
+		return this.growthRate < 0.0;
 	}
 }
 
