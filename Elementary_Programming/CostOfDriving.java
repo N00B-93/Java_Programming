@@ -1,10 +1,12 @@
 package Elementary_Programming;
 
 import java.util.Scanner;
+
 /*
 	This is a program that prompts the user to enter the distance to drive, the fuel efficiency of the carin miles per gallon, and the price per gallon, 
 	and displays the cost of the trip.
 */
+
 public class CostOfDriving
 {
 	public static void main(String... args)
@@ -25,7 +27,8 @@ public class CostOfDriving
 		double costPerGallon = input.nextDouble();
 
 		// Calculates the total gallon of fuel used.
-		double fuelConsumed = distance / milesPerGallon;		
+		double fuelConsumed = distance / milesPerGallon;
+
 		// Calculates the cost of driving.
 		double costOfDriving = fuelConsumed * costPerGallon;
 
@@ -33,4 +36,3 @@ public class CostOfDriving
 		System.out.printf("\nThe cost of driving is: $ %.2f\n", costOfDriving);
 	}
 }
-
