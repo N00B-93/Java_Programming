@@ -25,7 +25,7 @@ public class AreaOfTriangle
         double x3 = input.nextDouble();
         double y3 = input.nextDouble();
 
-        // Determines the length ofa side by calculating the distance between two of the vertices.
+        // Determines the length of a side by calculating the distance between two of the vertices.
         double side1 = Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
         double side2 = Math.sqrt(Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2));
         double side3 = Math.sqrt(Math.pow(x2 - x3, 2) + Math.pow(y2 - y3, 2));
