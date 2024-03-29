@@ -30,8 +30,8 @@ public class IngredientAdjuster
 
 		// Displays the quantity of ingredients required to bake the number of cookies entered by the user.
 		System.out.printf("\nIngredients required to bake %d cookies:", numberOfCookies);
-		System.out.printf("\n%.2f cups of sugar", quantityOfSugarForOneCookie * numberOfCookies);
-		System.out.printf("\n%.2f cups of butter", quantityOfButterForOneCookie * numberOfCookies);
-		System.out.printf("\n%.2f cups of flour\n", quantityOfFlourForOneCookie * numberOfCookies);
+		System.out.printf("\n%.2f cup(s) of sugar", quantityOfSugarForOneCookie * numberOfCookies);
+		System.out.printf("\n%.2f cup(s) of butter", quantityOfButterForOneCookie * numberOfCookies);
+		System.out.printf("\n%.2f cup(s) of flour\n", quantityOfFlourForOneCookie * numberOfCookies);
 	}
 }
