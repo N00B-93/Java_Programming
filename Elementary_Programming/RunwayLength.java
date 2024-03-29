@@ -19,7 +19,6 @@ public class RunwayLength
         System.out.print("\nEnter the velocity in m/s: ");
         double velocity = input.nextDouble();
 
-
         // Reads in the acceleration in m/s2.
         System.out.print("\nEnter the acceleration in m/s2: ");
         double acceleration = input.nextDouble();
