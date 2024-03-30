@@ -15,10 +15,7 @@ public class MaxOccurrence
 		Scanner input = new Scanner(System.in);
 
 		// Declares and initializes the number, count and max variables.
-		int number, count = 0, max = 0;
-
-		System.out.print("\nEnter a number(press 0 to exit): ");
-		number = input.nextInt();
+		int number = -2, count = 0, max = 0;
 
 		while (number != 0)
 		{
@@ -26,14 +23,17 @@ public class MaxOccurrence
 			System.out.print("\nEnter a number(press 0 to exit): ");
 			number = input.nextInt();
 
-			// Updates the max variable if the number entered is >= it.
-			if (number > max || number == max)
+			// Updates the max variable if the number entered is >= it, resets counter to 0 and increments it.
+			if (number > max)
 			{
+				count = 0;
 				max = number;
 				count++;
 			}
+			else if (number == max)  // Increments counter if the number is the same as max.
+				count++;
 		}
 		// Displays the result.
-		System.out.format("\nThe Largest number is: %d\nFrequency: %d\n", max, count);
+		System.out.format("\nThe Largest number is: %d\nFrequency: %d\n\n", max, count);
 	}
 }
