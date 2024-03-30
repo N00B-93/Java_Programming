@@ -1,4 +1,4 @@
-package Elementary_Programming;
+package Selections;
 
 import java.util.Scanner;
 
