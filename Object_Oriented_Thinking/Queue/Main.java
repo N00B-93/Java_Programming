@@ -33,5 +33,8 @@ public class Main
         {
             System.out.printf("Popped: %d\n", queue.deQueue());
         }
+
+	// Displays if the Queue is empty or not.
+	System.out.println("\nIs the Queue empty? " + queue.isEmpty());
     }
 }
