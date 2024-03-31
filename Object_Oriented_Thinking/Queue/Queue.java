@@ -24,7 +24,7 @@ public class Queue
      */
     public void enQueue(int element)
     {
-        if (this.size >= 8)
+        if (this.size >= this.elements.length)
         {
             int[] newElements = new int[size * 2];
             System.arraycopy(this.elements, 0, newElements, 0, this.size);
@@ -60,7 +60,7 @@ public class Queue
     public int deQueue()
     {
         int topElement = elements[0];
-        this.size = --this.size;
+        this.size = this.size--;
 
         for (int i = 0; i < this.size; i++)
         {
