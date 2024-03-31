@@ -1,5 +1,8 @@
-package Object_Oriented_Thinking;
+package Object_Oriented_Thinking.Time;
 
+/**
+ * The type Time.
+ */
 public class Time
 {
     // Attributes of a Time Object.
@@ -90,8 +93,8 @@ public class Time
     }
 
     /**
-     * This sets a new time for the Object using the time
-     * @param elapsedTime
+     * This sets a new time for the Object using the specified time elapsed.
+     * @param elapsedTime The new time elapsed.
      */
     public void setTime(long elapsedTime)
     {
