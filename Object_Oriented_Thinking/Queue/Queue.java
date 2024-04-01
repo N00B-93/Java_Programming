@@ -60,12 +60,12 @@ public class Queue
     public int deQueue()
     {
         int topElement = elements[0];
-        this.size = this.size--;
 
-        for (int i = 0; i < this.size; i++)
+        for (int i = 1; i < this.size; i++)
         {
-            this.elements[i] = this.elements[i + 1];
+            this.elements[i - 1] = this.elements[i];
         }
+        --this.size;
 
         return topElement;
     }
