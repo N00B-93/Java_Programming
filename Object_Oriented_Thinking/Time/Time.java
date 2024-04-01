@@ -93,8 +93,8 @@ public class Time
     }
 
     /**
-     * This sets a new time for the Object using the specified time elapsed.
-     * @param elapsedTime The new time elapsed.
+     * This sets a new time for the Object using the specified time elapsed in milliseconds.
+     * @param elapsedTime The new time elapsed in milliseconds.
      */
     public void setTime(long elapsedTime)
     {
