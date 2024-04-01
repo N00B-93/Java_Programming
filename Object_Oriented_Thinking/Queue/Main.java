@@ -29,12 +29,12 @@ public class Main
 
         // Pops out all the elements in the Queue and displays them.
         System.out.println("\nPopping elements in the queue...");
-        for (int i = 0; i < queue.getSize(); i++)
+        while (!queue.isEmpty())
         {
             System.out.printf("Popped: %d\n", queue.deQueue());
         }
 
-	// Displays if the Queue is empty or not.
-	System.out.println("\nIs the Queue empty? " + queue.isEmpty());
+	    // Displays if the Queue is empty or not.
+	    System.out.println("\nIs the Queue empty? " + queue.isEmpty());
     }
 }
