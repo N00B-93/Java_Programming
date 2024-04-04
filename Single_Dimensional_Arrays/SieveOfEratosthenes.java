@@ -27,7 +27,7 @@ public class SieveOfEratosthenes
 		int lineCounter = 0;
 
 		// Creates an array of boolean values with size equal to the limit the user specified.
-		boolean[] sieve = new boolean[limit];
+		boolean[] sieve = new boolean[limit + 1];
 
 		// Fills the boolean array with 'true'.
 		Arrays.fill(sieve, true);
