@@ -15,14 +15,21 @@ public class AreaOfAPentagon
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
-        // Prompts the user to enter the distance from the center of the pentagon to a vertex
+        // Prompts the user to enter the distance from the center of the pentagon to a vertex.
         System.out.printf("\nEnter the distance from the center to a vertex: ");
         double distance = input.nextDouble();
+
+        // Displays an error message and terminates the program if the user enters a negative distance to a vertex.
+        if (distance <= 0)
+        {
+            System.out.println("\nThe distance to a vertex must be greater than 0!!!");
+            System.exit(1);
+        }
 
         // Calculates the length of a side.
         double side = 2 * distance * Math.sin(Math.PI / 5);
 
-        // calculates the area.
+        // Calculates the area.
         double area = 5 * Math.pow(side, 2) / (4 * Math.tan(Math.PI / 5));
 
         // Displays the result.
