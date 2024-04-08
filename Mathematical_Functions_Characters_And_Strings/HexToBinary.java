@@ -3,7 +3,7 @@ package Mathematical_Functions_Characters_And_Strings;
 import java.util.Scanner;
 
 /*
-    This is a program that prompts the user to enter a hex digit and
+    This is a program that prompts the user to enter a hex digit(from A - F) and
     displays its corresponding binary number.
  */
 
@@ -22,7 +22,7 @@ public class HexToBinary
         if (hexValue < 65 || hexValue > 70)
         {
             System.out.println("\nInvalid Hex digit!");
-            System.exit(0);
+            System.exit(1);
         }
 
         // Converts the hexadecimal number to decimal.
