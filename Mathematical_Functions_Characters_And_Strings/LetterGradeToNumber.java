@@ -23,7 +23,7 @@ public class LetterGradeToNumber
         if (!"ABCDF".contains(letterGrade + ""))
         {
             System.out.printf("\n%c is an Invalid Grade!\n", letterGrade);
-            System.exit(0);
+            System.exit(1);
         }
 
         if (letterGrade == 'F')
