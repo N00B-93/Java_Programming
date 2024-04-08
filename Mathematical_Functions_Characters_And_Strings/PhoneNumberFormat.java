@@ -18,21 +18,18 @@ public class PhoneNumberFormat
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
+        // Creates a StringBuilder reference.
         StringBuilder phoneNumber;
 
-        while (true)
-        {
-            // Prompts the user to enter a 10-digit phone number
-            System.out.printf("\nEnter a 10-digit phone number: ");
-            phoneNumber = new StringBuilder(input.nextLine());
+        // Prompts the user to enter a 10-digit phone number
+        System.out.printf("\nEnter a 10-digit phone number: ");
+        phoneNumber = new StringBuilder(input.nextLine());
 
-            // Displays an error message if the number of digits in the phone number is not 10.
-            if (phoneNumber.length() != 10) {
-                System.out.println("\nInvalid phone number!!!\nPhone Number length must be 10.");
-                continue;
-            }
-            else
-                break;
+        // Displays an error message and terminates the program if the number of digits in the phone number is not 10.
+        if (phoneNumber.length() != 10)
+        {
+            System.out.println("\nInvalid phone number!!!\nPhone Number length must be 10.");
+            System.exit(1);
         }
 
         // Wraps the first three digits of the phone number in braces.
