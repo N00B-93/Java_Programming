@@ -15,11 +15,18 @@ public class AreaOfAnHexagon
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
-        // Prompts the user to enter the distance from the center of the hexagon to a vertex
-        System.out.printf("\nEnter the length of a side: ");
+        // Prompts the user to enter the length of a side of a Hexagon.
+        System.out.printf("\nEnter the length of a side of an Hexagon: ");
         double side = input.nextDouble();
 
-        // calculates the area.
+        // Displays an error message and terminates the program if a user enters a length <= 0.
+        if (side <= 0)
+        {
+            System.out.println("\nUse length of side > 0 only!!!");
+            System.exit(1);
+        }
+
+        // Calculates the area.
         double area = 6 * Math.pow(side, 2) / (4 * Math.tan(Math.PI / 6));
 
         // Displays the result.
