@@ -15,13 +15,21 @@ public class AreaOfRegularPolygon
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
-        // Prompts the user to enter the distance from the center of the hexagon to a vertex
+        // Prompts the user to enter the length of a side of a polygon.
         System.out.printf("\nEnter the length of a side: ");
         double side = input.nextDouble();
 
         // Prompts the user to enter the number of sides of the polygon.
         System.out.printf("\nEnter the number of sides of the polygon: ");
         double numberOfSides = input.nextDouble();
+
+        // Displays an error message and terminates the program if the length of side and the number of
+        // side is not greater than 0.
+        if (side <= 0 || numberOfSides <= 0)
+        {
+            System.out.println("\nThe length of side and the number of side must both be > 0!!!");
+            System.exit(1);
+        }
 
         // Calculates the area of the polygon.
         double area = numberOfSides * Math.pow(side, 2) / (4 * Math.tan(Math.PI / numberOfSides));
