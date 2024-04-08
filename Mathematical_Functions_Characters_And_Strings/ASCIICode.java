@@ -22,7 +22,7 @@ public class ASCIICode
         if (asciiValue < 0 || asciiValue > 127)
         {
             System.out.println("\nInvalid ASCII code\nEnter a number from 0 to 127!");
-            System.exit(0);
+            System.exit(1);
         }
 
         // Displays the result.
