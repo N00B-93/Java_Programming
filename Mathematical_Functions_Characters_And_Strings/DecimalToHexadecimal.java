@@ -22,7 +22,7 @@ public class DecimalToHexadecimal
         if (decimalValue < 0 || decimalValue > 15)
         {
             System.out.println("\nInvalid number\nEnter a number from 0 to 15!");
-            System.exit(0);
+            System.exit(1);
         }
 
         // Prints the original value if the number is greater than or equal to 0 or less than or equal to 9.
