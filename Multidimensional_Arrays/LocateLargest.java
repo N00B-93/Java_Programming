@@ -33,6 +33,7 @@ public class LocateLargest
 			{
 				matrix[i][j] = input.nextDouble();
 			}
+			input.nextLine();
 		}
 
 		// Determines the location of the largest element in the matrix.
