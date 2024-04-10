@@ -22,6 +22,8 @@ public class LinearEquation
 		double a01 = input.nextDouble();
 		double b0 = input.nextDouble();
 
+		input.nextLine();  // Input statement to consume any other entered by the user.
+
 		System.out.printf("\nEnter the values of a10, a11, b1 separated by space: ");
 		double a10 = input.nextDouble();
 		double a11 = input.nextDouble();
