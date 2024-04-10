@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Scanner;
 
 /*
-    This is a program that prompts the user to enter a directory name and then displays the number of Recursion.files in the
+    This is a program that prompts the user to enter a directory name and then displays the number of Recursion.MyFiles.files in the
     directory and its subdirectories.
  */
 
@@ -30,15 +30,15 @@ public class NumberOfFilesInADirectory
             System.exit(1);
         }
 
-        // Displays the number of Recursion.files in the directory and it's subdirectories.
-        System.out.printf("\nThe number of Recursion.files in %s is: %d\n\n", directoryName,
+        // Displays the number of Recursion.MyFiles.files in the directory and it's subdirectories.
+        System.out.printf("\nThe number of Recursion.MyFiles.files in %s is: %d\n\n", directoryName,
                 numberOfFiles(file));
     }
 
     /**
-     * This returns the number of Recursion.files in a directory using recursion.
-     * @param directoryName The name of the directory whose number of Recursion.files is to be determined.
-     * @return The number of Recursion.files in the directory.
+     * This returns the number of Recursion.MyFiles.files in a directory using recursion.
+     * @param directoryName The name of the directory whose number of Recursion.MyFiles.files is to be determined.
+     * @return The number of Recursion.MyFiles.files in the directory.
      */
     public static int numberOfFiles(File directoryName)
     {
