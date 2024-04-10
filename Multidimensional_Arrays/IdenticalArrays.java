@@ -22,7 +22,9 @@ public class IdenticalArrays
 		int[][] list2 = new int[3][3];
 		
 		// Populates the arrays with values.
+		System.out.println("\nElements of the first matrix");
 		fillArray(list1);
+		System.out.println("\nElements of the second matrix");
 		fillArray(list2);
 
 		// Determines if the arrays are identical.
@@ -47,6 +49,7 @@ public class IdenticalArrays
 			System.out.printf("\nEnter the three elements of row %d separated by space: ", row);
 			for (int col = 0; col < array.length; col++)
 				array[row][col] = input.nextInt();
+			input.nextLine();
 		}
 	}
 
