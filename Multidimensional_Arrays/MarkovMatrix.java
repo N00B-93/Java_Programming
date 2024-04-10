@@ -28,6 +28,7 @@ public class MarkovMatrix
 			{
 				matrix[i][j] = input.nextDouble();
 			}
+			input.nextLine();
 		}
 
 		// Checks if the matrix is a Markov matrix.
