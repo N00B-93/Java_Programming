@@ -12,51 +12,30 @@ public class AddMatrix
 {
 	public static void main(String[] args)
 	{
-		// Creates a Scanner Object.
-		Scanner input = new Scanner(System.in);
-
 		// Creates three 2-D arrays.
 		double[][] matrix1 = new double[3][3];
 		double[][] matrix2 = new double[3][3];
 		double[][] total = new double[3][3];
 
 		// Reads in elements of the first array(matrix).
-		System.out.println("\t\tMatrix 1");
-		for (int i = 0; i < 3; i++)
-		{
-			System.out.printf("\nEnter the three elements of row  %d separated by space: ", i + 1);
-			for (int j = 0; j < 3; j++)
-			{
-				matrix1[i][j] = input.nextDouble();
-			}
-		}
+		System.out.println("\n\t\tMatrix 1");
+		matrix1 = readMatrix();
 
 		// Reads in elements of the second array(matrix).
-		System.out.println("\t\tMatrix 2");
-		for (int i = 0; i < 3; i++)
-		{
-			System.out.printf("\nEnter the three elements of row %d separated by space: ", i + 1);
-			for (int j = 0; j < 3; j++)
-			{
-				matrix2[i][j] = input.nextDouble();
-			}
-		}
+		System.out.println("\n\t\tMatrix 2");
+		matrix2 = readMatrix();
 
 		// determines the sum of matrix1 and matrix2.
 		total = addMatrix(matrix1, matrix2);
 
 		// Displays the result.
 		System.out.println("\nThe sum of the two matrix is: ");
-		for (int i = 0; i < matrix1.length; i++)
+		for (int i = 0; i < 3; ++i)
 		{
-			for (int j = 0; j < matrix1[0].length; j++)
-			{
-				System.out.printf("%.2f    ", total[i][j]);
-			}
+			for (int j = 0; j < 3; ++j)
+				System.out.printf("%.2f\t", total[i][j]);
 			System.out.println();
 		}
-		// Closes the Scanner Object.
-		input.close();
 	}
 
 	/**
@@ -78,5 +57,25 @@ public class AddMatrix
 			}
 		}
 		return sum;
+	}
+
+	public static double[][] readMatrix()
+	{
+		double[][] matrix = new double[3][3];
+
+		// Creates a Scanner Object.
+		Scanner input = new Scanner(System.in);
+
+		for (int i = 0; i < 3; i++)
+		{
+			System.out.printf("\nEnter the three elements of row %d separated by space: ", i + 1);
+			for (int j = 0; j < 3; j++)
+			{
+				matrix[i][j] = input.nextDouble();
+			}
+			// Absorbs any other input apart from the required 3 elements to be entered.
+			input.nextLine();
+		}
+		return matrix;
 	}
 }
