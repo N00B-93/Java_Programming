@@ -26,7 +26,7 @@ public class EvenNumberOfOnes
 		System.out.println("\nThe generated matrix is: ");
 		printMatrix(matrix);
 
-		// Determines if the matrix's rows and columns has even number of 1's.
+		// Determines if the matrix's rows and columns has even numbers of 1's.
 		if (checkColumnsEvenOnes(matrix) && checkRowsEvenOnes(matrix))
 			System.out.println("\nAll the rows and columns of the matrix has even number of 1's.");
 		else
@@ -53,7 +53,7 @@ public class EvenNumberOfOnes
 	 *
 	 * @param matrix The matrix to be processed.
 	 *
-	 * @return true if all the columns in the matrix have even number of 1's else false.
+	 * @return true if all the columns in the matrix have even numbers of 1's else false.
 	 */
 	public static boolean checkColumnsEvenOnes(int[][] matrix)
 	{
@@ -77,7 +77,7 @@ public class EvenNumberOfOnes
 	 *
 	 * @param matrix The matrix to be processed.
 	 *
-	 * @return true if all the rows have even number of ones, else false.
+	 * @return true if all the rows have even numbers of ones, else false.
 	 */
 	public static boolean checkRowsEvenOnes(int[][] matrix)
 	{
