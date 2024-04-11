@@ -10,11 +10,11 @@ import java.util.Scanner;
 
 public class MultiplyMatrix
 {
+	// Creates a Scanner Object.
+	public static Scanner input = new Scanner(System.in);
+
 	public static void main(String args[])
 	{
-		// Creates a Scanner Object.
-		Scanner input = new Scanner(System.in);
-
 		int row = 3, col = 3;
 
 		// Creates three 2-D array(3x3 matrix) Objects
@@ -24,25 +24,11 @@ public class MultiplyMatrix
 
 		// Reads in the element of the first matrix.
 		System.out.println("\n\t\tMatrixA");
-		for (int i = 0; i < row; i++)
-		{
-			System.out.printf("\nEnter elements of row %d separated by space: ", i + 1);
-			for (int j = 0; j < col; j++)
-			{
-				matrixA[i][j] = input.nextDouble();
-			}
-		}
+		 fillArray(matrixA);
 
 		// Reads in the elements of the second matrix.
 		System.out.println("\n\t\tMatrixB");
-		for (int i = 0; i < row; i++)
-		{
-			System.out.printf("\nEnter elements of row %d separated by space: ", i + 1);
-			for (int j = 0; j < col; j++)
-			{
-				matrixB[i][j] = input.nextDouble();
-			}
-		}
+		fillArray(matrixB);
 
 		// Determines the product of the two matrix.
 		matrixC = multiplyMatrix(matrixA, matrixB);
@@ -82,5 +68,21 @@ public class MultiplyMatrix
 			}
 		}
 		return mat3;
+	}
+
+	/**
+	 * Fills an array with values entered by the users.
+	 *
+	 * @param array The array to be populated with values.
+	 */
+	public static void fillArray(double[][] array)
+	{
+		for (int row = 0; row < array.length; row++)
+		{
+			System.out.printf("\nEnter the three elements of row %d separated by space: ", row);
+			for (int col = 0; col < array.length; col++)
+				array[row][col] = input.nextInt();
+			input.nextLine();
+		}
 	}
 }
