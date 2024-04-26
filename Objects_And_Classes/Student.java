@@ -90,12 +90,15 @@ public class Student
 			student.marks[count] = input.nextDouble();
 		}
 
+		// Closes the Scanner.
+		input.close();
+
 		// Determines the student's grade.
 		double studentAverage = average(student.marks);
 		char studentGrade = grade(studentAverage);
 
 		// Displays the Student's details.
 		System.out.print("\n\t\tStudent's Details\n");
-		student.getDetails(student.fullName, student.rollNo, studentAverage, studentGrade);
+		Student.getDetails(student.fullName, student.rollNo, studentAverage, studentGrade);
 	}
 }
