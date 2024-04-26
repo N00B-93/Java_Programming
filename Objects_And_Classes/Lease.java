@@ -39,7 +39,7 @@ public class Lease
 	 *
 	 * @param name The tenant's name.
 	 */
-	public void setName(String name)
+	public void setName(String tenantName)
 	{
 		this.tenantName = tenantName;
 	}
@@ -184,6 +184,9 @@ public class Lease
 			// Prompts the user to enter the term(number 0f months).
 			System.out.printf("\nEnter the term(number of months): ");
 			int term = input.nextInt();
+
+			// Closes the Scanner
+			input.close();
 
 			if (apartmentNumber >= 100 && apartmentNumber <= 999)
 			{
