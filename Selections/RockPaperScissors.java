@@ -35,8 +35,10 @@ public class RockPaperScissors
 		{
 			System.out.println("\nInvalid Input!!");
 			System.exit (0);
-			input.close();
 		}
+
+		// Closes the Scanner Object.
+		input.close();
 
 		// Initializes COM choice with an empty string.
 		String COM = "";
