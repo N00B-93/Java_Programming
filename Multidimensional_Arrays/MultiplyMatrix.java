@@ -15,8 +15,6 @@ public class MultiplyMatrix
 
 	public static void main(String args[])
 	{
-		int row = 3, col = 3;
-
 		// Creates three 2-D array(3x3 matrix) Objects
 		double[][] matrixA = new double[3][3];
 		double[][] matrixB = new double[3][3];
