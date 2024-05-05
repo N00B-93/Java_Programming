@@ -13,17 +13,17 @@ public class MaxElementIn2_DArray
         // Creates a 2-D array of Integers.
         Integer[][] matrix1 =
                 {
-                        {new Integer(5), new Integer(101), new Integer(65)},
-                        {new Integer(17), new Integer(34), new Integer(901)},
-                        {new Integer(44), new Integer(1076), new Integer(356)}
+                        {5, 101, 65},
+                        {17, 34, 901},
+                        {44, 1076, 356}
         };
 
         // Creates a 2-D array of Strings.
         String[][] matrix2 =
                 {
-                        {new String("hard"), new String("john"), new String("baby")},
-                        {new String("soft"), new String("bread"), new String("fang")},
-                        {new String("cajole"), new String("monk"), new String("fig")}
+                        {"hard", "john", "baby"},
+                        {"soft", "bread", "fang"},
+                        {"cajole", "monk", "fig"}
         };
 
         // determines the maximum value in the array of Integers and Strings.
