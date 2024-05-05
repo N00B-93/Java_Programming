@@ -15,7 +15,7 @@ public class MaximumElementInGenericArrayList<E>
     public static void main(String[] args)
     {
         // Creates the first generic list Object to hold Integers.
-        MaximumElementInGenericArrayList genericList1 = new MaximumElementInGenericArrayList();
+        MaximumElementInGenericArrayList<Integer> genericList1 = new MaximumElementInGenericArrayList<>();
 
         // Adds 10 integers to the first generic list Object.
         genericList1.list.add(1);
@@ -30,7 +30,7 @@ public class MaximumElementInGenericArrayList<E>
         genericList1.list.add(16);
 
         // Creates the second generic list Object to hold Characters.
-        MaximumElementInGenericArrayList genericList2 = new MaximumElementInGenericArrayList();
+        MaximumElementInGenericArrayList<Character> genericList2 = new MaximumElementInGenericArrayList<>();
 
         // Adds 10 characters to the second generic list Object.
         genericList2.list.add('z');
@@ -50,7 +50,7 @@ public class MaximumElementInGenericArrayList<E>
     }
 
     /**
-     * Returns the maximum element in a Generic list..
+     * Returns the maximum element in a Generic list.
      *
      * @param <E>  The type parameter
      * @param list The list whose maximum element is to be determined.
@@ -58,13 +58,11 @@ public class MaximumElementInGenericArrayList<E>
      */
     public static <E extends Comparable<E>> E max(ArrayList<E> list)
     {
-        E max = list.get(0);
+        E max = list.getFirst();
 
-        for (int i = 0; i < list.size(); i++)
-        {
-            if (max.compareTo(list.get(i)) < 0)
-            {
-                max = list.get(i);
+        for (E e : list) {
+            if (max.compareTo(e) < 0) {
+                max = e;
             }
         }
         return max;
