@@ -24,18 +24,18 @@ public class MyMathClass<T extends Number>
      */
     public double standardDeviation(ArrayList<? extends Number> list)
     {
-        double mean = 0, sum = 0, meanDeviation = 0;
+        double mean, sum = 0, meanDeviation = 0;
 
-        for (int i = 0; i < list.size(); i++)
+        for (Number value : list)
         {
-            sum += list.get(i).doubleValue();
+            sum += value.doubleValue();
         }
 
         mean = sum / list.size();
 
-        for (int i = 0; i < list.size(); i++)
+        for (Number number : list)
         {
-            meanDeviation = Math.pow(list.get(i).doubleValue() - mean, 2);
+            meanDeviation = Math.pow(number.doubleValue() - mean, 2);
         }
 
         return Math.sqrt(meanDeviation / (list.size() - 1));
@@ -44,7 +44,7 @@ public class MyMathClass<T extends Number>
     public static void main(String[] args)
     {
         // Creates an Object of the MyMathClass class.
-        MyMathClass myMathClass = new MyMathClass();
+        MyMathClass<Double> myMathClass = new MyMathClass<>();
 
         // Creates an ArrayList Object to hold list of numbers whose standard deviation are to be determined.
         ArrayList<Double> list = new ArrayList<>();
