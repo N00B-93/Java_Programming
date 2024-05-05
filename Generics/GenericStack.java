@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @param <E> the type parameter
  */
-public class GenericStack<E> extends ArrayList
+public class GenericStack<E> extends ArrayList<E>
 {
     /**
      * Un-parameterized constructor that instantiates a new Generic stack.
@@ -27,7 +27,7 @@ public class GenericStack<E> extends ArrayList
      */
     public E peek()
     {
-        return (E) this.get(this.getSize() - 1);
+        return this.get(this.getSize() - 1);
     }
 
     /**
@@ -57,7 +57,7 @@ public class GenericStack<E> extends ArrayList
      */
     public E pop()
     {
-        return (E) this.get(this.getSize() - 1);
+        return this.remove(this.getSize() - 1);
     }
 
     /**
@@ -83,14 +83,16 @@ public class GenericStack<E> extends ArrayList
         for (int i = 0; i < 5; i++)
         {
             System.out.printf("\nEnter Element %d: ", i + 1);
-            stack1.add(input.nextLine());
+            stack1.push(input.nextLine());
         }
+        // Displays the element at the top of the stack.
+        System.out.printf("\nElement at the top of the stack: %s\n", stack1.peek());
 
         // Displays the String in reversed order.
         System.out.println("\nThe Members of the stack displayed in reversed order are: ");
-        for (int i = stack1.getSize() - 1; i >= 0; i--)
+        while (!stack1.isEmpty())
         {
-            System.out.println(stack1.get(i));
+            System.out.println(stack1.pop());
         }
     }
 }
