@@ -25,6 +25,8 @@ public class GenericArrayListSort
         // Sorts and displays the list.
         System.out.print("\nThe sorted list is: ");
         sort(list);
+        for (Integer e : list)
+            System.out.print(e + " ");
     }
 
     /**
@@ -32,7 +34,6 @@ public class GenericArrayListSort
      *
      * @param <E>  The Generic type parameter.
      * @param list The list to be sorted.
-     * @return void.
      */
     public static <E extends Comparable<E>> void sort(ArrayList<E> list)
     {
@@ -48,8 +49,5 @@ public class GenericArrayListSort
                 }
             }
         }
-
-        for (int k = 0; k < list.size(); k++)
-            System.out.print(list.get(k) + " ");
     }
 }
