@@ -39,10 +39,9 @@ public class MaximumElement
     {
         E max = list[0];
 
-        for (int i = 0; i < list.length; i++)
-        {
-            if (max.compareTo(list[i]) < 0)
-                max = list[i];
+        for (E e : list) {
+            if (max.compareTo(e) < 0)
+                max = e;
         }
         return max;
     }
