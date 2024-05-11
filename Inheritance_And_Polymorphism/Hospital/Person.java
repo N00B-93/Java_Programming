@@ -33,7 +33,7 @@ public class Person
      */
     public String toString()
     {
-        return "\n" + this.firstName + " " + this.lastName;
+        return this.firstName + " " + this.lastName;
     }
 
     /**
