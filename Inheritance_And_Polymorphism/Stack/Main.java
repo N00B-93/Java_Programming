@@ -52,6 +52,6 @@ public class Main
         {
             System.out.println(myStack2.pop());
         }
-        System.out.println("\nIs the Integer Stack empty? " + myStack2.isEmpty());
+        System.out.println("\nIs the String Stack empty? " + myStack2.isEmpty());
     }
 }
