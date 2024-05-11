@@ -4,9 +4,9 @@ public class Doctor extends Person
 {
     /**
      * Instantiates a new Doctor Object.
-     * @param first
-     * @param last
-     * @param speciality
+     * @param first The Doctor's first name.
+     * @param last The Doctor's last name.
+     * @param speciality The Doctor's speciality.
      */
     public Doctor(String first, String last, String speciality)
     {
