@@ -2,6 +2,18 @@ package Inheritance_And_Polymorphism.Hospital;
 
 public class Doctor extends Person
 {
+    /**
+     * Instantiates a new Doctor Object.
+     * @param first
+     * @param last
+     * @param speciality
+     */
+    public Doctor(String first, String last, String speciality)
+    {
+        super(first, last);
+        this.speciality = speciality;
+    }
+
     // A Doctor's speciality.
     private String speciality;
 
