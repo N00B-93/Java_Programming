@@ -192,9 +192,9 @@ public class Patient extends Person
     @Override
     public String toString()
     {
-        return "\n\t\tPatient Information\n" + "Full Name: " + super.toString() + "\n" + "Patient ID: " + this.patientID
-                + "\n"  + "Date Of Birth: " + this.dateOfBirth + "\n" + "Attending Physician: " + this.attendingPhysicianName
-                + "\n" + "Date Admitted: " + this.dateAdmitted + "\n" + "Date Discharged: " + this.dateDischarged +
-                "\n" + patientBill.toString();
+        return "\n\t\tPatient Information\n" + "Full Name: " + super.toString() + "\n" + "Age: " + this.getAge() + "\n"
+                + "Patient ID: " + this.getPatientID() + "\n"  + "Date Of Birth: " + this.getDateOfBirth() + "\n" +
+                "Attending Physician: " + this.getAttendingPhysicianName() + "\n" + "Date Admitted: " + this.getDateAdmitted()
+                + "\n" + "Date Discharged: " + this.getDateDischarged() + "\n" + patientBill.toString();
     }
 }
