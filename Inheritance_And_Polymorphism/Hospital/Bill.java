@@ -45,7 +45,7 @@ public class Bill
      */
     public double getDoctorsFee()
     {
-        return doctorsFee;
+        return this.doctorsFee;
     }
 
     /**
@@ -65,7 +65,7 @@ public class Bill
      */
     public double getRoomCharges()
     {
-        return roomCharges;
+        return this.roomCharges;
     }
 
     /**
