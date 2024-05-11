@@ -85,7 +85,7 @@ public class Bill
      */
     @Override
     public String toString() {
-        return "\nHospital Bill\t\t\n" + "Doctor's Fee: $" + this.getDoctorsFee() + "\n" + "Room Charges: $" + this.getRoomCharges()
+        return "\t\tHospital Bill\t\t\n" + "Doctor's Fee: $" + this.getDoctorsFee() + "\n" + "Room Charges: $" + this.getRoomCharges()
         + "\n" + "Pharmacy Charges: $" + this.getPharmacyCharges();
     }
 }
