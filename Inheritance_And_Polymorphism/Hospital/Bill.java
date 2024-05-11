@@ -3,7 +3,7 @@ package Inheritance_And_Polymorphism.Hospital;
 public class Bill
 {
     // Attributes of a Bill.
-    double pharmacyCharges, doctorsFee, roomCharges;
+    private double pharmacyCharges, doctorsFee, roomCharges;
 
     /**
      * Instantiates a new Bill Object.
@@ -76,5 +76,16 @@ public class Bill
     public void setRoomCharges(double roomCharges)
     {
         this.roomCharges = roomCharges;
+    }
+
+    /**
+     * Returns a String representation of a Bill Object.
+     *
+     * @return A String representation of a Bill Object.
+     */
+    @Override
+    public String toString() {
+        return "\nHospital Bill\t\t\n" + "Doctor's Fee: $" + this.getDoctorsFee() + "\n" + "Room Charges: $" + this.getRoomCharges()
+        + "\n" + "Pharmacy Charges: $" + this.getPharmacyCharges();
     }
 }
