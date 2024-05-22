@@ -31,7 +31,7 @@ public class LockerPuzzle
 
 		// Displays the number of the lockers that are open after all students has passed through the locker room.
 		System.out.printf("\nThe lockers open after all student has passed is: ");
-		for (int i = 0; i < locker.length; i++)
+		for (int i = 1; i < locker.length; i++)
 		{
 			if (locker[i])
 				System.out.printf("%d ", i);
@@ -40,39 +40,14 @@ public class LockerPuzzle
 	}
 
 	/**
-	 * Open or closes lockers in the locker list based on the student number.
+	 * Opens or closes lockers in the locker list based on the student's number.
 	 *
 	 * @param locker Array of boolean values representing the state(open or close) of the lockers.
-	 * @param studentNumber The student number.
+	 * @param studentNumber The student's number.
 	 */
 	public static void changeLocker(boolean[] locker, int studentNumber)
 	{
-		int i = 0;
-
-		if (studentNumber == 1)
-		{
-			i = 1;
-			while (i < locker.length)
-			{
-				locker[i] = !locker[i];
-				i++;
-			}
-		}
-		else if (studentNumber == 1)
-		{
-			i = 2;
-			while (i < locker.length) {
-				locker[i] = !locker[i];
-				i += 2;
-			}
-		}
-		else
-		{
-			i = studentNumber;
-			while (i < locker.length) {
-				locker[i] = !locker[i];
-				i += studentNumber;
-			}
-		}
-	}
+		  for (int i = studentNumber; i < locker.length; i = i + studentNumber)
+          locker[i] = !locker[i];
+  }
 }
