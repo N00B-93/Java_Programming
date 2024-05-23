@@ -16,17 +16,17 @@ public class ConsecutiveFour
 
 		// Prompts the user to enter the number of elements in the array.
 		System.out.print("\nEnter the number of elements in the list(value should be greater than 4): ");
-		int n = input.nextInt();
+		int numberOfElements = input.nextInt();
 
 		// Terminates the program if the number of elements is <= 4.
-		if (n <= 4)
+		if (numberOfElements < 4)
 		{
 			System.out.print("\nEnter a value greater than 4!!\n");
 			System.exit(0);
 		}
 
 		// Creates an array of integers with size entered by the user.
-		int numbers[] = new int[n];
+		int[] numbers = new int[numberOfElements];
 
 		// Fills the array with values entered by the user.
 		for (int i = 0; i < numbers.length; i++)
@@ -35,10 +35,11 @@ public class ConsecutiveFour
 			numbers[i] = input.nextInt();
 		}
 
+		// checks if the list has consecutive four.
 		boolean check = isConsecutive(numbers);
 
 		// Displays whether the array has consecutive four integers or not.
-		if (check == true)
+		if (check)
 			System.out.print("\nThe list has consecutive four.\n\n");
 		else
 			System.out.print("\nThe list doesn't have consecutive four.\n\n");
@@ -52,18 +53,9 @@ public class ConsecutiveFour
 	 */
 	public static boolean isConsecutive(int[] array)
 	{
-		for (int i = 0; i <= array.length - 4; i++)
+		for (int i = 0; i <= array.length - 3; i++)
 		{
-			int counter = 0;
-
-			for (int j = i + 1; j < i + 4; j++)
-			{
-				if (array[i] == array[j])
-					counter++;
-				else
-					break;
-			}
-			if (counter == 3)
+			if (array[i] == array[i + 1] && array[i] == array[i + 2] && array[i] == array[i + 3])
 				return true;
 		}
 		return false;
