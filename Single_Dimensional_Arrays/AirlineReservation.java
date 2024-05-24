@@ -39,7 +39,7 @@ public class AirlineReservation
             System.out.println("\n\t\t\t\tWelcome To $N00B Airlines.");
             System.out.print("""
                                 \n1. Make a Reservation
-                                \n2. Exit 
+                                \n2. Exit
                     """);
             System.out.printf("\nSelect an option: ");
             String choice = keyBoard.next();
@@ -185,20 +185,16 @@ public class AirlineReservation
         {
             for (int i = 0; i < 5; i++)
             {
-                if (seats[i])
-                    continue;
-                else
-                    flag = true;
+                if (!seats[i])
+                    return true;
             }
         }
         else if (section.equals("2"))
         {
             for (int i = 5; i < 10; i++)
             {
-                if (seats[i])
-                    continue;
-                else
-                    flag = true;
+                if (!seats[i])
+                    return true;
             }
         }
         return flag;
@@ -211,7 +207,7 @@ public class AirlineReservation
      * @param section The section, either first class or economy.
      * @return The assigned seat number.
      */
-    public static int assignSeat(boolean seats[], String section)
+    public static int assignSeat(boolean[] seats, String section)
     {
         int seatNumber = 0;
 
@@ -219,9 +215,7 @@ public class AirlineReservation
         {
             for (seatNumber = 0; seatNumber < 5; seatNumber++)
             {
-                if (seats[seatNumber])
-                    continue;
-                else
+                if (!seats[seatNumber])
                 {
                     seats[seatNumber] = true;
                     break;
@@ -232,9 +226,7 @@ public class AirlineReservation
         {
             for (seatNumber = 5; seatNumber < 10; seatNumber++)
             {
-                if (seats[seatNumber])
-                    continue;
-                else
+                if (!seats[seatNumber])
                 {
                     seats[seatNumber] = true;
                     break;
