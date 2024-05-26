@@ -8,6 +8,16 @@ public class Bank
     ArrayList<Account> accounts = new ArrayList<>();
 
     /**
+     * Instantiates a new Bank Object.
+     *
+     * @param accounts The Accounts in the Bank.
+     */
+    public Bank(ArrayList<Account> accounts)
+    {
+        this.accounts = accounts;
+    }
+
+    /**
      * This returns the sum of all the Account balances in all account present in the Bank.
      *
      * @return The sum of all Account balances in the Bank.
