@@ -18,8 +18,8 @@ public class StateAndCapital
 
 		// Creates a 2-D array to store states and their capitals.
 		String[][] stateAndCapital = {
-			{"abia", "umuahia"}, {"adamawa", "yola"}, {"akwa-ibom", "uyo"}, {"anambra", "akwa"}, {"bauchi", "bauchi"},
-				{"bayelsa", "yenagoa"}, {"benue", "makurdi"}, {"borno", "maiduguri"}, {"cross river", "calaabar"},
+			{"abia", "umuahia"}, {"adamawa", "yola"}, {"akwa-ibom", "uyo"}, {"anambra", "awka"}, {"bauchi", "bauchi"},
+				{"bayelsa", "yenagoa"}, {"benue", "makurdi"}, {"borno", "maiduguri"}, {"cross river", "calabar"},
 				{"delta", "asaba"}, {"ebonyi", "abakaliki"}, {"edo", "benin city"}, {"ekiti", "ado ekiti"}, {"enugu", "enugu"},
 				{"gombe", "gombe"}, {"imo", "owerri"}, {"jigawa", "dutse"}, {"kaduna", "kaduna"}, {"katsina", "katsina"},
 				{"kano", "kano"}, {"kebbi", "birin kebbi"}, {"kogi", "lokoja"}, {"kwara", "ilorin"}, {"lagos", "ikeja"},
@@ -28,7 +28,7 @@ public class StateAndCapital
 				{"yobe", "damaturu"}, {"nasarawa", "lafia"}, {"zamfara", "gusau"}, {"FCT", "abuja"}
 		};
 
-		int row = 0, correct = 1;
+		int row = 0, correct = 0;
 		String answer = "";
 
 		System.out.print("\n\t\tSTATE AND CAPITAL\n\n");
@@ -49,6 +49,6 @@ public class StateAndCapital
 			}
 		}
 		// Displays the number of correct and wrong answers.
-		System.out.printf("\nThe number of correct answers is: %d\nThe number of wrong answers is: %d\n", correct, 36 - correct);
+		System.out.printf("\nThe number of correct answers is: %d\nThe number of wrong answers is: %d\n", correct, 37 - correct);
 	}
 }
