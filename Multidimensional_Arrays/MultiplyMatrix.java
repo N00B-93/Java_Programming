@@ -13,12 +13,12 @@ public class MultiplyMatrix
 	// Creates a Scanner Object.
 	public static Scanner input = new Scanner(System.in);
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		// Creates three 2-D array(3x3 matrix) Objects
 		double[][] matrixA = new double[3][3];
 		double[][] matrixB = new double[3][3];
-		double[][] matrixC = new double[3][3];
+		double[][] matrixC;
 
 		// Reads in the element of the first matrix.
 		System.out.println("\n\t\tMatrixA");
@@ -51,9 +51,9 @@ public class MultiplyMatrix
 	 * @param mat2 The second matrix
 	 * @return The product of the two matrices.
 	 */
-	public static double[][] multiplyMatrix(double mat1[][], double mat2[][])
+	public static double[][] multiplyMatrix(double[][] mat1, double[][] mat2)
 	{
-		double mat3[][] = new double[3][3];
+		double[][] mat3 = new double[3][3];
 
 		for (int row = 0; row < mat1.length; row++)
 		{
