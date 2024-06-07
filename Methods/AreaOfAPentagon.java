@@ -16,7 +16,7 @@ public class AreaOfAPentagon
 		Scanner input = new Scanner(System.in);
 		// Reads in the length of the side of a pentagon.
 		System.out.print("\nEnter the length of the pentagon's side: ");
-		Double side = input.nextDouble();
+		double side = input.nextDouble();
 
 		// Displays the result.
 		System.out.printf("\nThe area of the pentagon is: %.2f\n", area(side));
