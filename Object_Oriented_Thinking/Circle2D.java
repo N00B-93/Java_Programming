@@ -58,9 +58,7 @@ public class Circle2D
     {
         double distance = Math.sqrt(Math.pow(this.x - x, 2) + Math.pow(this.y - y, 2));
 
-        if (distance < this.radius)
-            return true;
-        return false;
+        return distance < this.radius;
     }
 
     /**
@@ -72,9 +70,7 @@ public class Circle2D
     {
         double distance = Math.sqrt(Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2));
 
-        if (distance <= this.radius - other.radius)
-            return true;
-        return false;
+        return distance <= this.radius - other.radius;
     }
 
     /**
@@ -86,9 +82,7 @@ public class Circle2D
     {
         double distance = Math.sqrt(Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2));
 
-        if (this.radius + other.radius >= distance)
-            return true;
-        return false;
+        return this.radius + other.radius >= distance;
     }
 
     public static void main(String[] args)
