@@ -1,7 +1,5 @@
 package Inheritance_And_Polymorphism.Stack;
 
-import java.util.ArrayList;
-
 /*
     This is a program that demonstrates how a Stack works using two Objects of the MyStack class.
  */
