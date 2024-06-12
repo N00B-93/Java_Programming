@@ -1,6 +1,5 @@
 package Inheritance_And_Polymorphism.TeeShirt;
 
-import java.util.Arrays;
 import java.util.Locale;
 import java.text.NumberFormat;
 
