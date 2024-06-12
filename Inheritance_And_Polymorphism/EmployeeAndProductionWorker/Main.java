@@ -25,8 +25,12 @@ public class Main
 
         if (!isValidEmployeeID(employeeID))
         {
-            System.out.println("\nInvalid Employee ID format!\nEach digit of the first 3 numbers must be between 0 - 9\n" +
-                    "Last Character must be Uppercase between A - M\nThe separator in the middle must be '-'.");
+            System.out.println("""
+
+                    Invalid Employee ID format!
+                    Each digit of the first 3 numbers must be between 0 - 9
+                    Last Character must be Uppercase between A - M
+                    The separator in the middle must be '-'.""");
             System.exit(1);
         }
 
@@ -41,7 +45,7 @@ public class Main
 
         // Displays the ProductionWorker's details.
         System.out.println("\n\t\tEmployee Details");
-        System.out.println(productionWorker.toString());
+        System.out.println(productionWorker);
     }
 
     /**
@@ -56,12 +60,10 @@ public class Main
         char lastCharacter = employeeID.charAt(4);
         char separator = employeeID.charAt(3);
 
-        if (numberPrefix < 100 && numberPrefix > 999)
+        if (numberPrefix < 100 || numberPrefix > 999)
             return false;
-         if (separator != '-')
+        if (separator != '-')
              return false;
-         if (lastCharacter < 'A' || lastCharacter > 'M')
-            return false;
-        return true;
+        return lastCharacter >= 'A' && lastCharacter <= 'M';
     }
 }
