@@ -2,7 +2,7 @@ package Inheritance_And_Polymorphism.Stack;
 
 import java.util.ArrayList;
 
-public class MyStack<E> extends ArrayList
+public class MyStack<E> extends ArrayList<E>
 {
     // No-arg Constructor.
     public MyStack(){}
@@ -14,7 +14,7 @@ public class MyStack<E> extends ArrayList
      */
     public E pop()
     {
-        E element = (E) this.get(this.size() - 1);
+        E element = this.get(this.size() - 1);
         this.remove(element);
         return element ;
     }
@@ -36,7 +36,7 @@ public class MyStack<E> extends ArrayList
      */
     public E peek()
     {
-        return (E) this.get(this.size() - 1);
+        return this.get(this.size() - 1);
     }
 
     /**
