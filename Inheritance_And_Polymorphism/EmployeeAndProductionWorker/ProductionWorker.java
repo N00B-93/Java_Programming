@@ -41,7 +41,8 @@ public class ProductionWorker extends Employee
     {
         if (newShift.equalsIgnoreCase("day"))
             this.shift = 1;
-        this.shift = 2;
+        else if(newShift.equalsIgnoreCase("night"))
+            this.shift = 2;
     }
 
     /**
