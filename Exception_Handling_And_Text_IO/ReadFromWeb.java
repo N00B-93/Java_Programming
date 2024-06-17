@@ -16,7 +16,7 @@ public class ReadFromWeb
 	public static void main(String... args)
     {
         // Creates an ArrayList Object to hold the scores.
-        ArrayList<Integer> scores = new ArrayList<>();
+        ArrayList<Double> scores = new ArrayList<>();
 
         try
         {
@@ -29,10 +29,8 @@ public class ReadFromWeb
             // Reads in the data from the website.
             while (scanner.hasNext())
             {
-                if (scanner.next().equals(" "))
-                    continue;
-                else
-                    scores.add(scanner.nextInt());
+                if (!scanner.next().equals(" "))
+                    scores.add(scanner.nextDouble());
             }
             scanner.close();
         }
@@ -45,18 +43,18 @@ public class ReadFromWeb
             System.out.println(ex.getMessage());
         }
 
-        int sum = 0;
+        double sum = 0;
 
         // Calculates the sum of all scores.
         System.out.print("\nThe scores are: ");
-        for (Integer score : scores)
+        for (Double score : scores)
         {
-            System.out.printf("%d ", score);
+            System.out.printf("%.2f ", score);
             sum += score;
         }
 
         // Calculates the average and displays the result.
         double average = sum / scores.size();
-        System.out.printf("\n\nSum of scores: %d\nAverage score: %.2f\n\n", sum, average);
+        System.out.printf("\n\nSum of scores: %.2f\nAverage score: %.2f\n\n", sum, average);
     }
 }
