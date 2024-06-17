@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.DataInputStream;
 import java.io.IOException;
+import java.io.EOFException;
 
 /*
 	This is a program that prompts the user to enter the name of a binary file containing floating point numbers
@@ -32,12 +33,16 @@ public class SumOfNumbers
 				sumOfNumbers += number;  // Sum all the numbers in the file.
 			}
 		}
-		catch (IOException ex)
+		catch (EOFException ex)
 		{
 			System.out.println("\nAll numbers read from " + filePath);
 
 			// Displays the sum of the numbers in the file.
 			System.out.printf("\nThe sum of numbers in '%s' is: %.2f\n", filePath, sumOfNumbers);
+		}
+		catch (IOException ioException)
+		{
+			System.out.println(ioException.getMessage());
 		}
 	}
 }
