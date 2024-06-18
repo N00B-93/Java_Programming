@@ -13,7 +13,7 @@ import java.util.Scanner;
 	program, reads the file content, decrypts it and writes the output to a new file whose name is supplied by the user.
 */
 
-public class EncryptFile
+public class DecryptFile
 {
 
     public static void main(String... args)
