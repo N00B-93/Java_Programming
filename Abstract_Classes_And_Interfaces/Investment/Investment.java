@@ -9,4 +9,7 @@ public abstract class Investment
     // Abstract method getValue.
     public abstract double getValue();
 
+    // Abstract method displayData.
+    public abstract void displayData();
+
 }

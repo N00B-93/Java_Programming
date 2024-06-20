@@ -20,7 +20,7 @@ public class Stock extends Investment
         this.name = name;
         this.pricePerShare = pricePerShare;
         this.numberOfSharesOwned = numberOfSharesOwned;
-        this.dividend = dividend;
+        this.dividend = this.getDividend();
     }
 
     /**
@@ -42,5 +42,15 @@ public class Stock extends Investment
     public double getDividend()
     {
         return this.DIVIDEND_PERCENT * getValue();
+    }
+
+    /**
+     * Displays information about a Stock.
+     */
+    public void displayData()
+    {
+        System.out.println("\nName: " + this.name  + "\nPrice Per Share: $" + this.pricePerShare +
+                "\nNumber of Shares Owned: " + this.numberOfSharesOwned + "\nDividend: $" + this.dividend +
+                "\nValue of Investment: $" + this.getValue());
     }
 }
