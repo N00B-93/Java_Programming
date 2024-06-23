@@ -54,4 +54,31 @@ public class Box extends Container
     {
         return this.depth;
     }
+
+    /**
+     * This returns a String that describes a Box Container.
+     *
+     * @return A String that describes a Box Container.
+     */
+    @Override
+    public String toString()
+    {
+        String type = this.getClass().getSimpleName();
+        return String.format("\nContainer Type: %s\nWidth: %.2f\nLength: %.2f\nDepth: %.2f\nSize: %.2f\nCost of Packaging and Shipping: $%.2f\n",
+                type, this.width, this.length, this.depth, this.getSize(), this.getCost());
+    }
+
+
+    /**
+     * Compares two Containers.
+     *
+     * @param other The other Tube Container to be compared.
+     * @return The value 0 if the current instance is numerically equal to other; a value less than 0 if the current
+     * instance is numerically less than other; and a value greater than 0 if the current instance is numerically greater than other.
+     */
+    @Override
+    public int compareTo(Container other)
+    {
+        return Double.compare(this.getCost(), other.getCost());
+    }
 }
