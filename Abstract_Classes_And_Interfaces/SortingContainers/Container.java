@@ -1,6 +1,6 @@
 package Abstract_Classes_And_Interfaces.SortingContainers;
 
-public abstract class Container
+public abstract class Container implements Comparable<Container>
 {
     // Attribute of a Container.
     protected double length;
