@@ -49,4 +49,31 @@ public class Tube extends Container
     {
         return this.radius;
     }
+
+    /**
+     * This returns a String that describes a Tube Container.
+     *
+     * @return A String that describes a Tube Container.
+     */
+    @Override
+    public String toString()
+    {
+        String type = this.getClass().getSimpleName();
+        return String.format("\nContainer Type: %s\nRadius: %.2f\nLength: %.2f\nSize: %.2f\nCost of Packaging and Shipping: $%.2f\n",
+                type, this.radius, this.length, this.getSize(), this.getCost());
+    }
+
+
+    /**
+     * Compares two Containers.
+     *
+     * @param other The other Tube Container to be compared.
+     * @return The value 0 if the current instance is numerically equal to other; a value less than 0 if the current
+     * instance is numerically less than other; and a value greater than 0 if the current instance is numerically greater than other.
+     */
+    @Override
+    public int compareTo(Container other)
+    {
+        return Double.compare(this.getCost(), other.getCost());
+    }
 }
