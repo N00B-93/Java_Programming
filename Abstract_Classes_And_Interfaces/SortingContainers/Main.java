@@ -41,7 +41,7 @@ public class Main
                     double depth = console.nextDouble();
 
                     // Displays an error message and goes to the previous iteration if the user enters a negative number.
-                    if (length < 1 || width < 1 || depth < 1)
+                    if (length <= 0 || width <= 0 || depth <= 0)
                     {
                         System.out.println("\nError: Use non-negative numbers greater than 0 only for Container dimension, Try again.");
                         --i;
@@ -63,7 +63,7 @@ public class Main
                     double radius = console.nextDouble();
 
                     // Displays an error message and goes to the previous iteration if the user enters a negative number.
-                    if (length < 1 || radius < 1)
+                    if (length <= 0 || radius <= 0)
                     {
                         System.out.println("\nError: Use non-negative numbers greater than 0 only for Container dimension, Try again.");
                         --i;
