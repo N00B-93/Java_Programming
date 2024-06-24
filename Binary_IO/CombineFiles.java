@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /*
-    This is a program that reads in names of a number of source files and a destination file and then copy the
+    This is a program that reads in names of a number of source  text files and a destination file and then copy the
     contents of all the source file to the destination file.
  */
 
@@ -46,7 +46,7 @@ public class CombineFiles
                 {
                     // Reads a line from the file.
                     String line = inputStream.nextLine();
-                    outputStream.writeUTF(line);  // Writes a line of bytes to the destination file.
+                    outputStream.writeBytes(line);  // Writes a line of bytes to the destination file.
                 }
                 outputStream.writeChar('\n');  // Writes a newline to the destination file after reading a file.
             }
