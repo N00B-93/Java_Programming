@@ -1,0 +1,19 @@
+Design a class hierarchy consisting of Publication , Magazine , Book , and
+KidsMagazine classes as follows:
+
+ A Publication has a publisher, number of pages, a price, and a title. The class
+should implement a print method that displays all of this information.
+
+ A Magazine is a kind of publication that has a publication unit (monthly, weekly,
+biweekly). Magazine should override the print method of Publication and display
+all the new information.
+
+ A Book is a kind of publication that has an author. Book should also override the
+print method of Publication .
+
+ A KidsMagazine is a kind of magazine that has a recommended age range.
+Again, KidsMagazine should override the print method of Publication.
+
+Implement a test class that stores 10 different types of publications: general,
+magazine, book, or kid’s magazine in an array of Publication . Exploit polymorphism
+and print the information, sorted by title, about each object stored in the array.
