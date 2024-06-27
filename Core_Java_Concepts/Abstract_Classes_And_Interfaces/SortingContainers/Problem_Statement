@@ -1,0 +1,17 @@
+    We Pack N Ship 4 U packs and ships items using two kinds of containers: boxes and mailing tubes (cylinders). Rates
+are determined by the size of the container. The sizeof a box is the sum of its three dimensions: length, width, and depth,
+in inches. For a mailing tube, with radius r inches and length l, size is calculated as 2πr + l . The cost of packing
+and shipping a box is $0.35 times the size of the cube. For a tube,
+the cost is $0.25 times the size of the container.
+    Define an abstract class Container with a single instance variable, double length, two abstract methods, double
+getsize() and double getCost(), and one getter method double getLength().
+ Container should also implement Comparable based on cost.
+    Next, create two subclasses of Container, Box and Tube , that implement getCost() and getSize() , where getCost()
+returns the cost of packing and shipping and getSize() returns the size of a container, as previously described. Box needs
+additional instance variables width and depth, and Tube requires radius. Include getter methods for Box and Tube.
+    Finally, implement a TestContainer class that accepts 10 Container objects and stores them in an array. For each
+container, TestContainer should ask whether the container is a box or a tube and prompt for the appropriate dimensions.
+    Sort the 10 containers in ascending order by cost. Print the type of container, the dimensions of the container, and
+the cost, rounded to two decimal places.
+Hint: If x is an object, then x.getClass().getName() returns the name of the class
+(a String reference) to which x belongs.
