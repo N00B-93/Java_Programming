@@ -1,4 +1,4 @@
-package Lists_Stacks_Queues_And_ProirityQueues;
+package Data_Structures_And_Algorithms.Lists_Stacks_Queues_And_PriorityQueues.Lists;
 
 import java.util.Collections;
 import java.util.Scanner;
