@@ -1,4 +1,4 @@
-package Generics;
+package Core_Java_Concepts.Generics.PairOfObjects;
 
 /**
 	This is a driver program for the Pair class.

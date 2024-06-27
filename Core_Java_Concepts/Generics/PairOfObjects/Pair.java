@@ -1,8 +1,8 @@
-package Generics;
+package Core_Java_Concepts.Generics.PairOfObjects;
 
 public class Pair<T>
 {
-	// Attributes of the the Pair class.
+	// Attributes of the Pair class.
 	private T first;
 	private T second;
 
