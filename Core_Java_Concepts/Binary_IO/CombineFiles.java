@@ -1,4 +1,4 @@
-package Binary_IO;
+package Core_Java_Concepts.Binary_IO;
 
 import java.io.DataOutputStream;
 import java.io.File;
