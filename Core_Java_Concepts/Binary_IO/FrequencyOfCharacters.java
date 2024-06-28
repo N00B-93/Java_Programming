@@ -1,4 +1,4 @@
-package Binary_IO;
+package Core_Java_Concepts.Binary_IO;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
 	This is a program that prompts the user to enter the name of or path to a file and then displays
-	each character in the file and it's number of occurrence in the file.
+	each character in the file, and it's number of occurrence in the file.
 */
 
 public class FrequencyOfCharacters
@@ -25,7 +25,7 @@ public class FrequencyOfCharacters
 		// Creates an array to hold the frequency of occurrence of each character.
 		int[] frequency = new int[255];
 		
-		// Displays an error message and terminates the program if the name of or path to the file is non existent.
+		// Displays an error message and terminates the program if the name of or path to the file is non-existent.
 		if (!(new File(filePath)).exists())
 		{
 			System.out.printf("\nError: '%s' doesn't exists, Try again with a new file name.\n", filePath);
@@ -57,7 +57,7 @@ public class FrequencyOfCharacters
 	}
 	
 	/**
-	 * Displays an ASCII character and it's number of occurrence in a file given an array of integers containing the occurrence of each character.
+	 * Displays an ASCII character, and it's number of occurrence in a file given an array of integers containing the occurrence of each character.
 	 *
 	 * @param frequency An integer array containing the frequency of occurrence of each ASCII character.
 	 */
