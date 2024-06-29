@@ -1,4 +1,4 @@
-package Elementary_Programming;
+package Core_Java_Concepts.Elementary_Programming;
 
 import java.util.Locale;
 import java.util.Scanner;

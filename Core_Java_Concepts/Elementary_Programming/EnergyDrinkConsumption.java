@@ -1,4 +1,4 @@
-package Elementary_Programming;
+package Core_Java_Concepts.Elementary_Programming;
 
 /*
 	A soft drink company recently surveyed 12,467 of its customers and found that approximately 14 percent of those surveyed 
