@@ -1,8 +1,10 @@
+package Data_Structures_And_Algorithms.Lists_Stacks_Queues_And_PriorityQueues.Lists;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
-	This is a program that stores 10 million integers in ascending order (i.e., 1, 2, . . ., 10m) 
+	This is a program that stores 10 million integers in ascending order (i.e., 1, 2, ..., 10m)
 	in an ArrayList, displays the execution time taken to traverse the list, and searches for the 
 	10 millionth element using the get(index) vs using the iterator method.
  */
