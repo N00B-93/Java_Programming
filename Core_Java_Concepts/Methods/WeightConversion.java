@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 /*
     This is a program that converts weight from pounds to kilograms and from

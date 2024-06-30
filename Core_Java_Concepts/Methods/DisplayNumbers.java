@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 /*
     This is a program that displays the number 1 - 100 by printing 10 numbers

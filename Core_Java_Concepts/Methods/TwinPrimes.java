@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 /*
 	Twin primes are a pair of prime numbers that differ by 2.

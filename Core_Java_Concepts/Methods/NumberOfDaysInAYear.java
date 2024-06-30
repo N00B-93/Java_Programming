@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 /*	This is a program that displays the number of days in a year from 2014 to 2034
 	in tabular form using a function with the header;

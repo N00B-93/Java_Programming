@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 /*
 	This program calculates the sum of the series;

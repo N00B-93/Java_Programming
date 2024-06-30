@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 import java.util.Scanner;
 
@@ -29,8 +29,8 @@ public class AreaOfNSidedPolygon
 	/**
 	 * Calculates the area of an n-sided polygon given the number of sides and length of sides.
 	 *
-	 * @param numberOfSides The number of sides of the polygon.
-	 * @param lengthOfSide The length of a side of the polygon.
+	 * @param n The number of sides of the polygon.
+	 * @param side The length of a side of the polygon.
 	 *
 	 * @return The area of an n-sided polygon.
 	 */

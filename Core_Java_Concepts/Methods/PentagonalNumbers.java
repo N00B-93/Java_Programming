@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 /*
 	A pentagonal number is defined as n(3n-1)/2 for 

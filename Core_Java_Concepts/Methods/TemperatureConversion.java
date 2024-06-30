@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 /*
 	This is a program that converts temperature from Celsius to Fahrenheit and Fahrenheit to Celsius by using methods

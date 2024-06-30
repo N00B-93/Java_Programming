@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 /*
 	 An emirp (prime spelled backward) is a non-palindromic prime number whose reversal is also a prime.

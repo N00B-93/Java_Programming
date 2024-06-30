@@ -1,4 +1,4 @@
-package Methods;
+package Core_Java_Concepts.Methods;
 
 /*
 	A prime number is called a Mersenne prime if it can be written in the form 2 ^ p - 1 for some positive integer p.
