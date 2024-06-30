@@ -1,4 +1,4 @@
-package Recursion;
+package Core_Java_Concepts.Recursion;
 
 /*
     This program uses a recursive method with the header;

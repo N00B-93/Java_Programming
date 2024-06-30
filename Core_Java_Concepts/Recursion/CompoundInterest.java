@@ -1,4 +1,4 @@
-package Recursion;
+package Core_Java_Concepts.Recursion;
 
 import java.util.Scanner;
 import java.util.Locale;

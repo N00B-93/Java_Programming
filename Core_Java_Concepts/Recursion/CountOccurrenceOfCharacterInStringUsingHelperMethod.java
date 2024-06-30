@@ -1,4 +1,4 @@
-package Recursion;
+package Core_Java_Concepts.Recursion;
 
 import java.util.Scanner;
 
@@ -46,7 +46,7 @@ public class CountOccurrenceOfCharacterInStringUsingHelperMethod
      */
     public static int count(String string, char character)
     {
-	if (string.equals(""))
+	if (string.isEmpty())
 		return 0;
 	else if (character == string.charAt(string.length() - 1))
 		return 1 + count(string.substring(0, string.length() - 1), character);
