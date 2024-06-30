@@ -1,4 +1,4 @@
-package Selections;
+package Core_Java_Concepts.Selections;
 
 import java.util.Random;
 import java.util.Scanner;
