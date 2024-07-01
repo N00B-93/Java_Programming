@@ -1,0 +1,29 @@
+            A Grocery Store
+A grocery store sells many different items. Construct an abstract class Item with
+attributes:
+• String name ("apples" "soup" "candy bar")
+• double unitPrice.
+
+The methods of Item are getters and setters along with the requisite constructors. UnitItem and WeightItem are concrete
+classes that extend Item. An object belonging to UnitItem encapsulates a grocery item that is sold by the unit, such as a
+can of soup or a gallon of milk. The instance variable unitPrice (inherited from Item) stores the price of one item. UnitItem
+has an additional instance variable, amount, that holds the number of units of a particular item. UnitItem implements a method
+                            double cost() that returns the cost of amount units of an item.
+
+WeightItem represents an item sold by weight, such as nuts, fruits, or vegetables. In this case, unitPrice represents
+ the price per pound of an item. WeightItem has an additional instance variable, weight , that holds the number of pounds of some item.
+WeightItem also implements a method
+                            double cost()
+
+WeightItem’s implementation of cost() returns the total cost of weight pounds of the item. The weight of an item is set
+by placing the item on a scale. To simulate a scale, include a private helper method
+                        private double scale()
+that “weighs” the item and sets the weight field. This is done by generating a random number, with two decimal places,
+between 0.01 and 4.00. The constructor uses this virtual “scale” to set the weight field.
+
+Both classes should include the appropriate constructors as well as getter and setter methods.
+a. Design and implement Item, WeightItem , and UnitItem . Test your methods.
+b. A ShoppingCart class has an array of Item such that each array entry is a UnitItem or a WeightItem reference.
+Additionally, ShoppingCart implements a method
+                        void checkout()
+that determines the total cost all items in the “cart,” that is the array.
