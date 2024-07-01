@@ -1,4 +1,4 @@
-package Generics;
+package Core_Java_Concepts.Generics;
 
 /*
     This is a program that uses a method with the header:
