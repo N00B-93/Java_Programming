@@ -1,0 +1,23 @@
+            A Mergeable Interface
+Some objects can be combined with other objects of the same type to create larger objects of the same type. This is not
+the case with Remote or Film objects, but it is the case with Strings, MusicCollections, or ClassLists.
+
+a. Define a Mergeable interface with one method Object merge(Object x).
+
+b. Design a class IntegerSet that implements Mergeable . IntegerSet stores a set of integers. Methods of IntegerSet should include:
+        void printElements();
+        int size();
+        boolean elementOf(int x);
+
+c. Define merge(Object x) so that if x and y belong to IntegerSet then x.merge(y) returns a reference to an IntegerSet, z ,
+containing the integers in x and/or y. Set z contains no duplicates . For example, if x = {1, 2, 3, 4, 5} and y = {3, 4, 5, 6, 7, 8}
+then z = {1, 2, 3, 4, 5, 6, 7, 8}.
+
+d. A particular lottery allows people to play any set of numbers from 1 through 1,000,000. Each number played costs $1.
+There is one winning number chosen each week. A group of friends play the lottery, and each one has some set of
+favorite numbers. Possibly, some of the friends have chosen the same numbers. They decide to pool their numbers and split
+the winnings if any one of their numbers wins.
+
+Write a test class that creates three IntegerSet objects containing the lottery numbers played by three different friends.
+Your test class should create a merged set from the three sets and print out all the numbers in it and how much it will
+cost to play these numbers (i.e., how many numbers).
