@@ -1,0 +1,24 @@
+                        A Company and the Employee Hierarchy
+
+This problem builds on the Employee project, exhibiting a classic example of polymorphism for the Employee hierarchy.
+
+A Company has a name, a product, and a list of employees. That is, a Company is composed of two String references ( name and product ),
+and an array of type Employee .
+
+Design a Company class. Methods should include constructors, getters, and setters, as well as methods that:
+• return a reference to an array of all the executives,
+• return a reference to an array of all the managers who are not executives,
+• return a reference to an array of all the employees who are neither managers nor executives, and
+• return the sum of the salaries of all employees.
+
+Include a main(...) method that tests the class. Your application should query the user for the name, product, and employee
+information. The user should indicate whether each employee is a manager or an executive, and it should include salary and other
+relevant information. The test class should display:
+• the company name,
+• company product,
+• three lists of names and salaries:
+• executives,
+• managers (who are not executives), and
+• employees (who are neither managers nor executives),
+• the sum of the salaries for each list,
+• and the sum of all the salaries of all employees.
