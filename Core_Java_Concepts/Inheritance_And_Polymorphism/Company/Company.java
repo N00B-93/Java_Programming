@@ -84,7 +84,7 @@ public class Company
 
         for (Employee employee: this.employees)
         {
-            if (employee instanceof Manager)
+            if (employee instanceof Manager && !(employee instanceof Executive))
                 managers.add((Manager) employee);
         }
         return managers;
