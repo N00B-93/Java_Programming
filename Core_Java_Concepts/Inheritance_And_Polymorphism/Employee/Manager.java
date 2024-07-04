@@ -30,9 +30,10 @@ public class Manager extends Employee
     @Override
     public void printData()
     {
+        System.out.println();
         super.printData();
 
-        System.out.printf("\n\nEmployee Managed by %s:", this.name);
+        System.out.printf("Employee(s) Managed by %s:\n", this.name);
         for (Employee employee: this.employeesManaged)
             System.out.println(employee.name);
     }
