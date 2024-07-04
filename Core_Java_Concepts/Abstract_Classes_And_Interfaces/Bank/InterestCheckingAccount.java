@@ -1,4 +1,4 @@
-package Abstract_Classes_And_Interfaces.Bank;
+package Core_Java_Concepts.Abstract_Classes_And_Interfaces.Bank;
 
 public class InterestCheckingAccount extends Account implements InterestBearingAccount
 {
