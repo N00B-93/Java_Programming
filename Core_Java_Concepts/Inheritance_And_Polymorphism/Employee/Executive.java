@@ -23,7 +23,7 @@ public class Executive extends Manager
                      ArrayList<Employee> employeesManaged, double bonusPercent)
     {
         super(name, salary, age, employeeID, department, title, employeesManaged);
-        this.bonusPercent = bonusPercent / 100;
+        this.bonusPercent = bonusPercent;
     }
 
     /**
@@ -33,7 +33,7 @@ public class Executive extends Manager
     public void printData()
     {
         super.printData();
-
+        System.out.printf("Bonus Percent: %.2f%%\n", this.bonusPercent);
     }
 
     /**
