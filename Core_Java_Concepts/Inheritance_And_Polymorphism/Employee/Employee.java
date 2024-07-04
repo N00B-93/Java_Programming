@@ -35,8 +35,8 @@ public class Employee
      */
     public void printData()
     {
-        System.out.println(this.getClass().getSimpleName() + " Details:");
-        System.out.printf("\nName: %s\nAge: %d\nID: %d\nSalary: %.2f\nDepartment: %s\nTitle: %s\n",
+        System.out.println("\n" + this.getClass().getSimpleName() + " Details:");
+        System.out.printf("Name: %s\nAge: %d\nID: %d\nSalary: $%.2f\nDepartment: %s\nTitle: %s\n",
                 this.name, this.age, this.employeeID, this.salary, this.department, this.title);
     }
 
