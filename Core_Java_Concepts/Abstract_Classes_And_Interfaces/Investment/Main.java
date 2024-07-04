@@ -1,6 +1,6 @@
-package Abstract_Classes_And_Interfaces.Investment;
+package Core_Java_Concepts.Abstract_Classes_And_Interfaces.Investment;
 
-import Abstract_Classes_And_Interfaces.Investment.BankAccount.*;
+import Core_Java_Concepts.Abstract_Classes_And_Interfaces.Investment.BankAccount.*;
 import java.util.ArrayList;
 
 public class Main

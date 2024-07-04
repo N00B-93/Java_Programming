@@ -1,4 +1,4 @@
-package Abstract_Classes_And_Interfaces.Investment.BankAccount;
+package Core_Java_Concepts.Abstract_Classes_And_Interfaces.Investment.BankAccount;
 
 public class CheckingAccount extends BankAccount
 {

@@ -1,6 +1,6 @@
-package Abstract_Classes_And_Interfaces.Investment.BankAccount;
+package Core_Java_Concepts.Abstract_Classes_And_Interfaces.Investment.BankAccount;
 
-import Abstract_Classes_And_Interfaces.Investment.Investment;
+import Core_Java_Concepts.Abstract_Classes_And_Interfaces.Investment.Investment;
 
 public abstract class BankAccount extends Investment
 {

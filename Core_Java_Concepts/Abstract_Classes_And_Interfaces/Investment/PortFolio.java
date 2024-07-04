@@ -1,4 +1,4 @@
-package Abstract_Classes_And_Interfaces.Investment;
+package Core_Java_Concepts.Abstract_Classes_And_Interfaces.Investment;
 
 import java.util.ArrayList;
 

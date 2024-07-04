@@ -1,4 +1,4 @@
-package Object_Oriented_Thinking.MyInteger;
+package Core_Java_Concepts.Object_Oriented_Thinking.MyInteger;
 
 /**
  * The type MyInteger.
