@@ -7,7 +7,7 @@ import java.util.Scanner;
 	displays the largest common prefix of the two strings.
 */
 
-public class LargestCommonPrefix
+public class LongestCommonPrefix
 {
 	public static void main(String... args)
 	{
