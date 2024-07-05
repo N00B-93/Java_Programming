@@ -15,7 +15,7 @@ public class PassOrFail
 		Scanner input = new Scanner(System.in);
 		
 		// Reads in a score.
-		System.out.print("\nEnter a score: ");
+		System.out.print("\nEnter a score(press -1 to end input): ");
 		double score = input.nextDouble();
 		
 		// Loop that terminates when user enters -1.
@@ -32,7 +32,7 @@ public class PassOrFail
 				System.out.println("\nEnter a score from 1 to 100.");
 
 			// Reads in a Score.
-			System.out.print("\nEnter a score: ");
+			System.out.print("\nEnter a score(press -1 to end input): ");
 			score = input.nextDouble();
 		}
 	}
