@@ -19,9 +19,9 @@ public class GreatestCommonDivisor
 		int number2 = console.nextInt();
 
 		// Displays an error message andnterminates the program if the user's input is invalid.
-		if (number1 < 0 || number2 < 0)
+		if (number1 <= 0 || number2 <= 0)
 		{
-			System.err.println("\nError: Use positive integers only, Try again.\n");
+			System.err.println("\nError: Use positive integers > 0 only, Try again.\n");
 			System.exit(0);
 		}
 		
