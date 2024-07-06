@@ -1,4 +1,4 @@
-package Loops;
+package Core_Java_Concepts.Loops;
 
 /*
 	This is a program that computes the tuition in ten years and the

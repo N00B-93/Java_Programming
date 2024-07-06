@@ -1,4 +1,4 @@
-package Loops;
+package Core_Java_Concepts.Loops;
 
 /*
     Radioactive decay of radioactive materials can be modeled by the equation A = A0e-t(log 2/h), where A is 

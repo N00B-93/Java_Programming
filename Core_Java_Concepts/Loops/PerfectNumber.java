@@ -1,4 +1,4 @@
-package Loops;
+package Core_Java_Concepts.Loops;
 
 /*
 	A positive integer is called a perfect number if it is equal to

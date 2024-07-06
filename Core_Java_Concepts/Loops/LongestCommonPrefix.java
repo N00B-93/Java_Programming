@@ -1,4 +1,4 @@
-package Loops;
+package Core_Java_Concepts.Loops;
 
 import java.util.Scanner;
 

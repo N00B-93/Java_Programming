@@ -1,4 +1,4 @@
-package Loops;
+package Core_Java_Concepts.Loops;
 
 /*
         This is a program that computes the value of PI using the formula:

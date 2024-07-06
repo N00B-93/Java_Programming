@@ -1,4 +1,4 @@
-package Loops;
+package Core_Java_Concepts.Loops;
 
 /*	This is a program that displays the leap years between 101 and 2100 separated by a single space
 	and 10 years each per line.
