@@ -1,8 +1,10 @@
 package Core_Java_Concepts.Loops;
 
 /*
-
+	This is a program that determines the sum of all terms in the series;
+			1 / (1 + √2) + 1 / (√2 + √3) + 1 / (√3 + √4) +...+ 1 / (√999 + √1000)
  */
+
 public class Summation
 {
     public static void main(String[] args)
@@ -18,3 +20,4 @@ public class Summation
         System.out.printf("\nThe sum of all terms is: %.2f\n", summation);
     }
 }
+
