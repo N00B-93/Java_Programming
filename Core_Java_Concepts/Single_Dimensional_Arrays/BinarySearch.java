@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 /*
 	This is a program that implements the Binary search Algorithm to search for

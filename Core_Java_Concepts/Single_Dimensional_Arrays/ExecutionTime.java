@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 /*
 	This is a program that creates an array of integers from 1 to 100,000,000 in ascending order and then
