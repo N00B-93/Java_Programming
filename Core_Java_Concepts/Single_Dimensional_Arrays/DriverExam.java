@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 import java.util.Scanner;
 
@@ -11,11 +11,11 @@ import java.util.Scanner;
 public class DriverExam
 {
     // Array holding the correct answers.
-    char[] correctAnswers = {'B', 'D', 'A', 'A', 'C', 'A', 'B', 'A', 'C', 'D', 'B', 'C', 'D', 'A', 'D',
+    private char[] correctAnswers = {'B', 'D', 'A', 'A', 'C', 'A', 'B', 'A', 'C', 'D', 'B', 'C', 'D', 'A', 'D',
                             'C', 'C', 'B', 'D', 'A'};
 
     // Array holding the student's answers.
-    char[] answers = new char[20];
+    private char[] answers;
 
     // Pass mark.
     public static final int PASS_MARK = 15;
@@ -42,10 +42,7 @@ public class DriverExam
         for (int i = 0; i < this.answers.length; i++)
         {
             if (this.answers[i] == this.correctAnswers[i])
-            {
                 correct++;
-
-            }
         }
         return correct;
     }
@@ -67,9 +64,7 @@ public class DriverExam
      */
     public boolean passed()
     {
-        if (this.totalCorrect() >= PASS_MARK)
-            return true;
-        return false;
+        return this.totalCorrect() >= PASS_MARK;
     }
 
     /**
@@ -123,11 +118,11 @@ public class DriverExam
         System.out.println("\n\t\tExam details:");
         System.out.printf("\nNumber of questions answered correctly: %d\n", driverExam.totalCorrect());
         System.out.printf("\nNumber of Questions answered wrongly: %d\n", driverExam.totalMissed());
+
         int[] questionsMissed = driverExam.questionsMissed();
-        for (int i = 0; i < questionsMissed.length; i++)
-        {
-            System.out.printf("\nQuestion %d\n", questionsMissed[i]);
-        }
+
+        for (int j : questionsMissed)
+            System.out.printf("\nQuestion %d\n", j);
         System.out.printf("\nStudent Passed? %b\n", driverExam.passed());
     }
 }
