@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 import java.util.Arrays;
 
@@ -48,6 +48,6 @@ public class LockerPuzzle
 	public static void changeLocker(boolean[] locker, int studentNumber)
 	{
 		  for (int i = studentNumber; i < locker.length; i = i + studentNumber)
-          locker[i] = !locker[i];
-  }
+			  locker[i] = !locker[i];
+  	}
 }
