@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 /*
 	This is a program that takes in 10 scores as command line arguments and
@@ -8,7 +8,7 @@ package Single_Dimensional_Arrays;
 
 public class AnalyzeScore
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		// Creates an array that can store 10 floating point numbers.
 		double[] numbers = new double[args.length];
@@ -31,19 +31,29 @@ public class AnalyzeScore
 		double average = average(numbers);
 
 		// Determines the number of scores below, equal to and above the average.
-		for (int i = 0; i < numbers.length; i++)
+        for (double number : numbers)
 		{
-			if (numbers[i] > average)
-				count1++;
-			else if (numbers[i] < average)
-				count2++;
-			else if (numbers[i] == average)
-				count3++;
-		}
+            if (number > average)
+                count1++;
+            else if (number < average)
+                count2++;
+            else if (number == average)
+                count3++;
+        }
 
 		// Displays the result.
-		System.out.printf("\nThe average Score is: %.2f\n\nThe number of Score above average is: %d\n\nThe number of " +
-				"Score below average is: %d\n\nThe number of Score equal to average is: %d\n\n",
+		System.out.printf("""
+
+                        The average Score is: %.2f
+
+                        The number of Score above average is: %d
+
+                        The number of \
+                        Score below average is: %d
+
+                        The number of Score equal to average is: %d
+
+                        """,
 				average, count1, count2, count3);
 	}
 
@@ -57,10 +67,9 @@ public class AnalyzeScore
 	{
 		int total = 0;
 
-		for (int i = 0; i < array.length; i++)
-		{
-			total += array[i];
-		}
+        for (double v : array)
+            total += v;
+
 		return ((double)total / array.length);
 	}
 }
