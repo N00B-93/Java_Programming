@@ -1,6 +1,4 @@
-package Single_Dimensional_Arrays;
-
-import java.util.Scanner;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 /*
     This is a program that determines the number of uppercase characters in a String entered by the user in the
@@ -11,9 +9,6 @@ public class NumberOfUppercaseLetters
 {
     public static void main(String[] args)
     {
-        // Creates a Scanner Object.
-        Scanner input = new Scanner(System.in);
-
         int numberOfUppercase = 0;
 
         // Informs the user to enter a String in the command line.
