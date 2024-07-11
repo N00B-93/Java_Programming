@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 import java.util.Scanner;
 
@@ -49,9 +49,7 @@ public class IsSorted
     {
         for (int i = 1; i < list.length; i++)
         {
-            if (list[i] >= list[i - 1])
-                continue;
-            else
+            if (list[i] <= list[i - 1])
                 return false;
         }
         return true;
