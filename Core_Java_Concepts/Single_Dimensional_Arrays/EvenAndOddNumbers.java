@@ -14,13 +14,14 @@ public class EvenAndOddNumbers
 		// Creates a Scanner Object.
 		Scanner console = new Scanner(System.in);
 
-		// Creates an array to store 10 intwgers.
+		// Creates an array to store 10 integers.
 		int[] array = new int[10];
 
 		// Prompts the user to enter the 10 elements of the array.
 		System.out.print("\nEnter 10 integers: ");
 		for (int i = 0; i < array.length; ++i)
 			array[i] = console.nextInt();
+
 		// Displays the number of even and odd elements in the array.
 		displayNumberOfEvenAndOddElements(array);
 	}
@@ -28,19 +29,19 @@ public class EvenAndOddNumbers
 	/**
 	 * Displays the number of even and odd elements in an array.
 	 *
-	 * @param array An hold holding integers.
+	 * @param array An array holding integers.
 	 */
 	public static void displayNumberOfEvenAndOddElements(int... array)
 	{
 		int numberOfEvenElements = 0, numberOfOddElements = 0;
 
-		for (int i = 0; i < array.length; ++i)
+        for (int j : array)
 		{
-			if (array[i] % 2 == 0)
-				++numberOfEvenElements;
-			else
-				++numberOfOddElements;
-		}
+            if (j % 2 == 0)
+                ++numberOfEvenElements;
+            else
+                ++numberOfOddElements;
+        }
 
 		System.out.printf("\nNumber of even elements: %d\nNumber of odd elements: %d\n", numberOfEvenElements, numberOfOddElements);
 	}
