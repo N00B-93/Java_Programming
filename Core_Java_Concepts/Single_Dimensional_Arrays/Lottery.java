@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -51,8 +51,7 @@ public class Lottery
 	 */
 	public int[] getLotteryNumbers()
 	{
-		int[] generatedLotteryNumbers = this.lotteryNumbers;
-		return generatedLotteryNumbers;
+		return this.lotteryNumbers;
 	}
 
 	public static void main(String[] args)
@@ -69,16 +68,14 @@ public class Lottery
 		// Prompts the user to enter his/her lottery numbers separated by space.
 		System.out.printf("\nEnter your 5 lottery numbers(0 - 9) separated by space: ");
 		for (int count = 0; count < playerNumbers.length; count++)
-		{
 			playerNumbers[count] = keyBoard.nextInt();
-		}
 
 		// Determines how many of the player's numbers match the lottery number.
 		int numberOfMatch = lottery.checkLotteryNumbers(playerNumbers);
 
 		// Displays the Lottery number and the user's numbers.
 		System.out.printf("\n\t\tLottery Numbers: ");
-		displayArray(lottery.lotteryNumbers);
+		displayArray(lottery.getLotteryNumbers());
 
 		System.out.printf("\n\n\t\tYou Played: ");
 		displayArray(playerNumbers);
@@ -97,7 +94,6 @@ public class Lottery
 	 */
 	public static void displayArray(int[] array)
 	{
-		for (int i = 0; i < array.length; i++)
-			System.out.printf("%d ", array[i]);
+        for (int j : array) System.out.printf("%d ", j);
 	}
 }
