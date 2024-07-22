@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class SortStudents
 		Scanner input = new Scanner(System.in);
 
 		// Variable to temporary store student's name.
-		String tempName = "";
+		String tempName;
 
 		// Reads in the number of student's to be processed.
 		System.out.print("\nEnter the number of students: ");
@@ -33,7 +33,6 @@ public class SortStudents
 			scores[count] = input.nextInt();
 			input.nextLine();
 
-
 			System.out.printf("\nEnter names[%d]: ", count);
 			names[count] = input.nextLine();
 		}
@@ -49,9 +48,9 @@ public class SortStudents
 					scores[i + 1] = scores[i];
 					scores[i] = temp;
 
-					tempName = names[i + 1].substring(0, names[i + 1].length());
-					names[i + 1] = names[i].substring(0, names[i].length());
-					names[i] = tempName.substring(0, tempName.length());
+					tempName = names[i + 1];
+					names[i + 1] = names[i];
+					names[i] = tempName;
 				}
 			}
 		}
@@ -59,9 +58,8 @@ public class SortStudents
 		// Displays the student's names and scores in descending order.
 		System.out.print("\nNames\t\t\tScores\n");
 		for (int j = 0; j < numOfStudents; j++)
-		{
-			System.out.printf("\n%s\t\t\t%d\n", names[j], scores[j]);
-		}
+			System.out.printf("\n%-15s%7d\n", names[j], scores[j]);
+
 		System.out.println("\n");
 	}
 }

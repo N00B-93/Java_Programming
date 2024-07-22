@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 public class CountSingleDigit
 {
@@ -13,18 +13,13 @@ public class CountSingleDigit
 		// Randomly generates 100 integers and store them in the array.
 		for (int count = 0; count < num.length; count++)
 		{
-			num[count] = (int)(Math.random() * 10);
-		}
-
-		// Determines the frequency of occurrence of each digit and stores them in the frequency array.
-		for (int count = 0; count < 100; count++)
+			num[count] = (int) (Math.random() * 10);
 			++frequency[num[count]];
+		}
 
 		// Displays each number and the frequency of its occurrence.
 		System.out.print("\nNumber\t\t\tFrequency\n");
 		for (int count = 0; count < 10; count++)
-		{
 			System.out.printf("%6d\t\t\t%9d\n", count, frequency[count]);
-		}
 	}
 }

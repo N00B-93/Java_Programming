@@ -15,7 +15,7 @@ public class FindLargestElementIndex
 		// Creates a Scanner Object.
 		Scanner console = new Scanner(System.in);
 
-		// Creates an array to store 10 intwgers.
+		// Creates an array to store 10 integers.
 		double[] array = new double[10];
 
 		// Prompts the user to enter the 10 elements of the array.

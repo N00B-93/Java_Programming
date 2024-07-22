@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 import java.util.Scanner;
 
@@ -37,9 +37,12 @@ public class SortCharacter
 	{
 		char[] arr = str.toCharArray();
 
-		for (int pass = 0; pass < arr.length - 1; pass++) {
-			for (int count = 0; count < arr.length - pass - 1; count++) {
-				if (arr[count] > arr[count + 1]) {
+		for (int pass = 0; pass < arr.length - 1; pass++)
+		{
+			for (int count = 0; count < arr.length - pass - 1; count++)
+			{
+				if (arr[count] > arr[count + 1])
+				{
 					char temp = arr[count];
 					arr[count] = arr[count + 1];
 					arr[count + 1] = temp;

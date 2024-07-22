@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 import java.util.Scanner;
 
@@ -25,7 +25,7 @@ public class SumOfIntegers
             System.exit(1);
         }
 
-        // Calculates the sum of the integers entered in the command line.
+        // Calculates the sum of the integers entered on the command line.
         for (String number: args)
         {
            sum += Integer.parseInt(number);

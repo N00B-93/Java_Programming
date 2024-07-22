@@ -1,4 +1,4 @@
-package Single_Dimensional_Arrays;
+package Core_Java_Concepts.Single_Dimensional_Arrays;
 
 import java.util.Scanner;
 
@@ -34,8 +34,8 @@ public class BubbleSort
 
 		// Displays the sorted array.
 		System.out.print("\nThe array sorted in ascending order is: ");
-		for (int i = 0; i < array.length; i++)
-			System.out.printf("%d ", array[i]);
+        for (int j : array)
+			System.out.printf("%d ", j);
 		System.out.println();
 	}
 
@@ -43,12 +43,10 @@ public class BubbleSort
 	 * Sorts a list of integers in ascending order using the Bubble Sort Algorithm.
 	 *
 	 * @param array The array to be sorted.
-	 *
-	 * @return void.
 	 */
 	public static void bubbleSort(int... array)
 	{
-		int tempVar = 0;
+		int tempVar;
 
 		for (int pass = 0; pass < array.length; pass++)
 			for (int i = 1; i < array.length; i++)
