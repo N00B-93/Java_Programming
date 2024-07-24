@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /*
 	This is a program that prompts the user to enter area in square meters and then determines and 
-	displays the equivent in pings.
+	displays the equivalent in pings.
 */
 
 public class SquareMetersToPings
