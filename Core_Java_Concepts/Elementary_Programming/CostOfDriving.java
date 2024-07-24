@@ -3,8 +3,8 @@ package Core_Java_Concepts.Elementary_Programming;
 import java.util.Scanner;
 
 /*
-	This is a program that prompts the user to enter the distance to drive, the fuel efficiency of the carin miles per gallon, and the price per gallon, 
-	and displays the cost of the trip.
+	This is a program that prompts the user to enter the distance to drive, the fuel efficiency of the car in miles per gallon,
+	and the price per gallon of fuel, and displays the cost of the trip.
 */
 
 public class CostOfDriving
@@ -20,7 +20,7 @@ public class CostOfDriving
 
 		// Reads in the miles per gallon.
 		System.out.print("\nEnter the miles per gallon: ");
-		 double milesPerGallon = input.nextDouble();
+		double milesPerGallon = input.nextDouble();
 
 		// Reads in the cost per gallon.
 		System.out.print("\nEnter the cost per gallon: ");
