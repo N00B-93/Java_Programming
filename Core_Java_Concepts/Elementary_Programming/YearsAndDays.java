@@ -19,10 +19,10 @@ public class YearsAndDays
         int minutes = input.nextInt();
 
         // Calculates the Years
-        int years = (int) (minutes / 525600);
+        int years = minutes / 525600;
 
         // Calculates the Days.
-        int days = (int) (minutes % 525600 / 1440);
+        int days = minutes % 525600 / 1440;
 
         // Displays the result.
         System.out.printf("\n%d minutes is approximately %d years %d days\n", minutes, years, days);
