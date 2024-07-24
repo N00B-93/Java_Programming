@@ -3,7 +3,7 @@ package Core_Java_Concepts.Elementary_Programming;
 import java.util.Scanner;
 
 /*
-	This is a program that prompts the user to enter the amount of rice is a bag in pounds and displays the number of bags of rice that will be
+	This is a program that prompts the user to enter the amount of rice in a bag in pounds and displays the number of bags of rice that will be
 	needed to store a ton of rice.
 */
 
@@ -27,7 +27,7 @@ public class BagsOfRice
 		// Converts the quantity of rice from pounds to kilogram.
 		double amountOfRiceInKg = amountOfRice * POUNDS_TO_KILOGRAMS;
 
-		// Determines the numberbof bags needed to store a ton of rice.
+		// Determines the number of bags needed to store a ton of rice.
 		long numberOfBags = Math.round(1000 / amountOfRiceInKg);
 
 		// Displays the number of bags needed.
