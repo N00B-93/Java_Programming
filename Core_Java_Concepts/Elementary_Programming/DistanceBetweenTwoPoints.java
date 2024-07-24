@@ -28,6 +28,6 @@ public class DistanceBetweenTwoPoints
         double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
         // Displays the result.
-        System.out.printf("\nThe distance between the two points is: %.2f\n", distance);
+        System.out.printf("\nThe distance between the points (%.2f, %.2f) and (%.2f, %.2f) is: %.2f\n", x1, y1, x2, y2, distance);
     }
 }
