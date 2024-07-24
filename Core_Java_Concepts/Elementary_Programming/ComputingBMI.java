@@ -15,6 +15,10 @@ public class ComputingBMI
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
+        // Constants to represent the conversion of weight from pounds to kilograms and inches to meters.
+        double POUNDS_TO_KILOGRAMS = 0.45359;
+        double INCHES_TO_METERS = 0.0254;
+
         // Reads in weight.
         System.out.print("\nEnter weight in pounds: ");
         double weight = input.nextDouble();
@@ -23,8 +27,8 @@ public class ComputingBMI
         System.out.print("\nEnter height in inches: ");
         double height = input.nextDouble();
 
-        // Converts the weight to kilograms and height to meters and then calculate the BMI.
-        double bmi = (weight * 0.45359) / (Math.pow(height * 0.0254, 2));
+        // Calculate the BMI.
+        double bmi = (weight * POUNDS_TO_KILOGRAMS) / (Math.pow(height * INCHES_TO_METERS, 2));
 
         // Displays the result.
         System.out.printf("\nBMI is: %.2f\n", bmi);
