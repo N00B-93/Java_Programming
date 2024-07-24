@@ -17,17 +17,17 @@ public class CalculateInterest
         Scanner input = new Scanner(System.in);
 
         // Reads in the balance.
-        System.out.print("\nEnter the balance: ");
+        System.out.print("\nEnter the balance: $");
         double balance = input.nextDouble();
 
         // Reads in the interest rate.
-        System.out.print("\nEnter the interest rate in percentage (e.g., 3 for 3%):: ");
-        double annualInterestRate = input.nextDouble() / 100;
+        System.out.print("\nEnter the interest rate in percentage (e.g., 3 for 3%): ");
+        double annualInterestRate = input.nextDouble();
 
         // Calculates the interest.
-        double interest = balance * annualInterestRate / 12.0;
+        double interest = balance * annualInterestRate / 1200.0;
 
         // Displays the result.
-        System.out.printf("\nThe Interest is %.2f\n", interest);
+        System.out.printf("\nThe Interest for the next month is: $%.2f\n", interest);
     }
 }
