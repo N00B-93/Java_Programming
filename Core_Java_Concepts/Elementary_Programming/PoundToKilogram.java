@@ -14,12 +14,15 @@ public class PoundToKilogram
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
+        // Constant that represents the conversion from pounds to kilograms.
+        double POUNDS_TO_KILOGRAMS = 0.454;
+
         // Reads in weight in Pounds.
         System.out.print("\nEnter the weight in pounds: ");
         double pound = input.nextDouble();
 
         // Calculates the weight in Kilogram.
-        double kilogram = pound * 0.454;
+        double kilogram = pound * POUNDS_TO_KILOGRAMS;
 
         // Displays the result.
         System.out.printf("\n%.2f pound is %.2f kilogram\n", pound, kilogram);
