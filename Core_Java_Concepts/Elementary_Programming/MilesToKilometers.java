@@ -20,7 +20,7 @@ public class MilesToKilometers
 		System.out.print("\nEnter distance in Miles: ");
 		double miles = console.nextDouble();
 
-		// Determimes the kilometers equivalent of the user's input.
+		// Determines the kilometers equivalent of the user's input.
 		double kilometers = miles * MILES_TO_KILOMETERS;
 
 		// Displays the result.
