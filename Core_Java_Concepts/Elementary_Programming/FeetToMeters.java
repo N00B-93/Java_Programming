@@ -14,12 +14,15 @@ public class FeetToMeters
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
+        // Constant representing the conversion of feet to meters.
+        double FEET_tO_METERS = 0.305;
+
         // Reads in the length in feet.
         System.out.print("\nEnter the length in feet: ");
         double feet = input.nextDouble();
 
         // Calculates the length in meter.
-        double meter = feet * 0.305;
+        double meter = feet * FEET_tO_METERS;
 
         // Displays the result.
         System.out.printf("\n%.2f feet is %.2f meters\n", feet, meter);
