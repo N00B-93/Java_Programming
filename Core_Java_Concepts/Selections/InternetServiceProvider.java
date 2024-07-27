@@ -34,7 +34,7 @@ public class InternetServiceProvider
 		System.out.print("\nEnter the number of hours used: ");
 		int numberOfHours = input.nextInt();
 		
-		double totalCost = 0.0;
+		double totalCost;
 
 		switch (packageSubscription)
 		{
@@ -51,7 +51,7 @@ public class InternetServiceProvider
 				if (numberOfHours <= 20)
 					totalCost = 13.95;
 				else
-					totalCost = 13.95 + (numberOfHours - 20) * 1;
+					totalCost = 13.95 + (numberOfHours - 20);
 				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
 				break;
 			// Displays subscription package C's details.
