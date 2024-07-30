@@ -20,7 +20,7 @@ public class PointsInACircle
         double xCoord = input.nextDouble();
         double yCoord = input.nextDouble();
 
-        // Calculates the distance between the center of the two circle.
+        // Calculates the distance between the point and the center of the circle.
         double distance = Math.sqrt(Math.pow(xCoord - 0, 2) + Math.pow(yCoord - 0, 2));
 
         // Determines whether the point is inside, outside or on the circle and displays the result.
