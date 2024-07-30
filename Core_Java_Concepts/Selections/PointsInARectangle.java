@@ -26,15 +26,15 @@ public class PointsInARectangle
         // Calculate half the diagonal(radius of the rectangle).
         double halfDiagonal = lengthOfDiagonal / 2;
 
-        // Calculates the length of distance between the point and the circle center.
+        // Calculates the length of distance between the point and the rectangle center.
         double distance = Math.sqrt(Math.pow(xCoord - 0, 2) + Math.pow(yCoord - 0, 2));
 
-        // Determines whether the point is in the circle, on the circle or outside the circle.
+        // Determines whether the point is in the rectangle, on the rectangle or outside the rectangle.
         if (distance < halfDiagonal)
-            System.out.printf("\nPoint (%.2f, %.2f) is in the circle.\n", xCoord, yCoord);
+            System.out.printf("\nPoint (%.2f, %.2f) is in the rectangle.\n", xCoord, yCoord);
         else if (distance == halfDiagonal)
-            System.out.printf("\nPoint (%.2f, %.2f) is on the circle.\n", xCoord, yCoord);
+            System.out.printf("\nPoint (%.2f, %.2f) is on the rectangle.\n", xCoord, yCoord);
         else if (distance > halfDiagonal)
-            System.out.printf("\nPoint (%.2f, %.2f) is outside the circle.\n", xCoord, yCoord);
+            System.out.printf("\nPoint (%.2f, %.2f) is outside the rectangle.\n", xCoord, yCoord);
     }
 }
