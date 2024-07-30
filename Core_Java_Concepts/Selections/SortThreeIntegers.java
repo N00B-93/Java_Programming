@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /*
     This is a program that prompts the user to enter three integers
-    and display the integers in non-decreasing order.
+    and display the integers in decreasing order.
  */
 
 public class SortThreeIntegers
@@ -21,17 +21,17 @@ public class SortThreeIntegers
         int number3 = input.nextInt();
 
         // Displays the result in descending order.
-        if (number1 > number2 && number2 > number3)
-            System.out.println("\nThe numbers sorted in ascending order are: " + number1 + " " + number2 + " " + number3);
-        else if (number1 > number3 && number3 > number2)
-            System.out.println("\nThe numbers sorted in ascending order are: " + number1 + " " + number3 + " " + number2);
-        else if (number2 > number1 && number1 > number3)
-            System.out.println("\nThe numbers sorted in ascending order are: " + number2 + " " + number1 + " " + number3);
-        else if (number2 > number3 && number3 > number1)
-            System.out.println("\nThe numbers sorted in ascending order are: " + number2 + " " + number3 + " " + number1);
-        else if (number3 > number2 && number2 > number1)
-            System.out.println("\nThe numbers sorted in ascending order are: " + number3 + " " + number2 + " " + number1);
-        else
-            System.out.println("\nThe numbers sorted in ascending order are: " + number3 + " " + number1 + " " + number2);
+        if (number1 >= number2 && number1 >= number3 && number2 >= number3)
+            System.out.println("\nThe numbers sorted in descending order are: " + number1 + " " + number2 + " " + number3);
+        else if (number1 >= number3 && number1 >= number2 && number3 >= number2)
+            System.out.println("\nThe numbers sorted in descending order are: " + number1 + " " + number3 + " " + number2);
+        else if (number2 >= number1 && number2 >= number3 && number1 >= number3)
+            System.out.println("\nThe numbers sorted in descending order are: " + number2 + " " + number1 + " " + number3);
+        else if (number2 >= number3 && number2 >= number1 && number3 >= number1)
+            System.out.println("\nThe numbers sorted in descending order are: " + number2 + " " + number3 + " " + number1);
+        else if (number3 >= number2 && number3 >= number1 && number2 >= number1)
+            System.out.println("\nThe numbers sorted in descending order are: " + number3 + " " + number2 + " " + number1);
+        else if (number3 >= number1 && number3 >= number2 && number1 >= number2)
+            System.out.println("\nThe numbers sorted in descending order are: " + number3 + " " + number1 + " " + number2);
     }
 }
