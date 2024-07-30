@@ -41,7 +41,7 @@ public class RockPaperScissors
 		input.close();
 
 		// Initializes COM choice with an empty string.
-		String COM = "";
+		String COM;
 
 		// Randomly generates a number and assigns a choice for COM based on the number using an advanced Switch-Case block.
 		int option = rand.nextInt(3);
@@ -50,7 +50,7 @@ public class RockPaperScissors
             case 0 -> "rock";
             case 1 -> "paper";
             case 2 -> "scissors";
-            default -> COM;
+            default -> "";
         };
 
 		// Displays COM choice.
