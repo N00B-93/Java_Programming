@@ -43,6 +43,6 @@ public class PickACard
         if (rank == 1 || rank == 11 || rank == 12 || rank == 13)
             System.out.printf("\n%s of %s\n", rankString, suitString);
         else
-            System.out.printf("\n%d of %s", rank, suitString);
+            System.out.printf("\n%d of %s\n", rank, suitString);
     }
 }
