@@ -55,7 +55,6 @@ public class ISBN_10
         isbn9 = (int) Math.floor(isbn9 / 10.0);
 
         d1 = isbn9 % 10;
-        isbn9 = (int) Math.floor(isbn9 / 10.0);
 
         // Calculates the value of d10.
         int d10 = (d1 + d2 * 2 + d3 * 3 + d4 * 4 + d5 * 5 + d6 * 6 + d7 * 7 + d8 * 8 + d9 * 9) % 11;
