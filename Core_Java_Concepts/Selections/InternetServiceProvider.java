@@ -19,45 +19,55 @@ public class InternetServiceProvider
 		// Creates a Scanner Object.
 		Scanner input = new Scanner(System.in);
 
+		// Constants to hold the base price for each subscription.
+		final double BASE_PRICE_FOR_SUB_A = 9.95, BASE_PRICE_FOR_SUB_B = 13.95, BASE_PRICE_FOR_SUB_C = 19.95;
+
+		// Constants to hold the base number of hours for each subscription.
+		final int BASE_HOURS_FOR_SUB_A = 10, BASE_HOURS_FOR_SUB_B = 20;
+
 		// Prompts the user to enter his/her type of Package subscription.
 		System.out.print("\nEnter your package subscription('A', 'B', or 'C'): ");
-		String packageSubscription = input.next();
+		char packageSubscription = input.next().charAt(0);
 
 		// Continues to loop till user enters a valid package subscription.
-		while (!"ABC".contains(packageSubscription))
+		while (!"ABC".contains(packageSubscription + ""))
 		{
 			System.out.printf("\nInvalid Subscription plan!!!\nEnter a valid subscription plan('A', 'B', or 'C'): ");
-			packageSubscription = input.next();
+			packageSubscription = input.next().charAt(0);
 		}
 
 		// Prompts the user to enter the number of hours used.
 		System.out.print("\nEnter the number of hours used: ");
 		int numberOfHours = input.nextInt();
-		
+
+		// Variable to hold the total cost of a subscription.
 		double totalCost;
 
 		switch (packageSubscription)
 		{
 			// Displays subscription package A's details.
-			case "A":
-				if (numberOfHours <= 10)
-					totalCost = 9.95;
+			case 'A':
+				if (numberOfHours <= BASE_HOURS_FOR_SUB_A)
+					totalCost = BASE_PRICE_FOR_SUB_A;
 				else
-					totalCost = 9.95 + (numberOfHours - 10) * 2;
-				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
+					totalCost = BASE_PRICE_FOR_SUB_A + (numberOfHours - BASE_HOURS_FOR_SUB_A) * 2;
+				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n",
+						packageSubscription, numberOfHours, totalCost);
 				break;
 			// Displays subscription package B's details.
-			case "B":
-				if (numberOfHours <= 20)
-					totalCost = 13.95;
+			case 'B':
+				if (numberOfHours <= BASE_HOURS_FOR_SUB_B)
+					totalCost = BASE_PRICE_FOR_SUB_B;
 				else
-					totalCost = 13.95 + (numberOfHours - 20);
-				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
+					totalCost = BASE_PRICE_FOR_SUB_B + (numberOfHours - BASE_HOURS_FOR_SUB_B);
+				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n",
+						packageSubscription, numberOfHours, totalCost);
 				break;
 			// Displays subscription package C's details.
-			case "C":
-				totalCost = 19.95;
-				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n", packageSubscription, numberOfHours, totalCost);
+			case 'C':
+				totalCost = BASE_PRICE_FOR_SUB_C;
+				System.out.printf("\nSubscription Package Type: %s\nNumber of hours: %d hours\nTotal Charges: $ %.2f\n",
+						packageSubscription, numberOfHours, totalCost);
 				break;
 		}
 	}
