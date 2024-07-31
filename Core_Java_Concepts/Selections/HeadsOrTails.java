@@ -22,29 +22,36 @@ public class HeadsOrTails
         int randomNumber = rand.nextInt(2);
 
         // Initializes a string variable representing coin side based on number generated.
-        String coinSide = "";
+        String coinSide;
 
         // Assigns a choice for coin side based on number generated.
         coinSide = switch (randomNumber)
         {
             case 0 -> "Head";
             case 1 -> "Tail";
-            default -> coinSide;
+            default -> "";
         };
 
         // Prompts the user to enter '0' or '1'.
-        System.out.print("\nEnter 0 or 1 ('0' represents Head and '1' represents Tail.): ");
+        System.out.print("\nEnter 0 or 1 ('0' represents Head and '1' represents Tail): ");
         int userChoice = input.nextInt();
 
+        // Displays an error message and terminates the program if the user enters a number less than 0 or greater than 1.
+        if (userChoice < 0 || userChoice > 1)
+        {
+            System.out.println("\nError: User choice must be '0' or '1', Try again.");
+            System.exit(1);
+        }
+
         // Initializes a string variable representing coin side based on user input.
-        String userCoinSide = "";
+        String userCoinSide;
 
         // Assigns a choice for coin side based on user input.
         userCoinSide = switch (userChoice)
         {
             case 0 -> "Head";
             case 1 -> "Tail";
-            default -> userCoinSide;
+            default -> "";
         };
 
         // Displays the result based on user and COM choice.
