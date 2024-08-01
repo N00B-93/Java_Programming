@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import  java.util.Scanner;
 
@@ -25,9 +25,9 @@ public class AreaOfRegularPolygon
 
         // Displays an error message and terminates the program if the length of side and the number of
         // side is not greater than 0.
-        if (side <= 0 || numberOfSides <= 0)
+        if (side <= 0 || numberOfSides < 3)
         {
-            System.out.println("\nThe length of side and the number of side must both be > 0!!!");
+            System.out.println("\nThe length of side must be > 0 and the number of side must be >= 3!!!");
             System.exit(1);
         }
 
