@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import java.util.Scanner;
 
@@ -22,7 +22,7 @@ public class AreaOfAnHexagon
         // Displays an error message and terminates the program if a user enters a length <= 0.
         if (side <= 0)
         {
-            System.out.println("\nUse length of side > 0 only!!!");
+            System.out.println("\nUse length of side greater than 0 only!!!");
             System.exit(1);
         }
 
