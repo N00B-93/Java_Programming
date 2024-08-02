@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import java.util.Scanner;
 
@@ -18,6 +18,9 @@ public class GreatCircleDistance
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
+        // Variable to hold the radius of the Earth.
+        double RADIUS_OF_THE_EARTH = 6371.01;
+
         // Prompts the user to enter the latitude and longitude of the first point and converts them to radians.
         System.out.printf("\nEnter point 1 (latitude and longitude separated by space) in degrees: ");
         double x1 = Math.toRadians(input.nextDouble());
@@ -29,11 +32,10 @@ public class GreatCircleDistance
         double y2 = Math.toRadians(input.nextDouble());
 
         // Calculates the great circle distance.
-        double greatCircleDistance = 6371.01 * Math.acos(Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2)
+        double greatCircleDistance = RADIUS_OF_THE_EARTH * Math.acos(Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2)
                                     * Math.cos(y1 - y2));
 
         // Displays the result.
         System.out.printf("\nThe distance between the two points is: %.2f\n", greatCircleDistance);
-
     }
 }
