@@ -6,7 +6,7 @@ import java.util.Scanner;
 	A famous paradox devised by Zeno, an Eleatic philosopher (b. 488 BCE), asserts that to run
 	from point A to point B , a runner must fi rst traverse half the distance between A and B . 
 	Before he can do that, he must traverse a “half of the half,” and so on ad infinitum. 
-	He must, therefore, pass through an infi nite number of points, and that is impossible in a finite time. Design and implement a method
+	He must, therefore, pass through an infinite number of points, and that is impossible in a finite time. Design and implement a method
 			double zeno(int n)
 	This is a program that prompts the user to enter an integer greater than 0 and calculates the sum of the series;
 			1/2 + 1/4 + 1/8 +...
