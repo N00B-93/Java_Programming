@@ -30,13 +30,15 @@ public class CompareCost
 		double pricePerKg1 = price1 / weight1;
 
 		// Calculates the price per kg of package2.
-		double pricePerKg2 = price2 /weight2;
+		double pricePerKg2 = price2 / weight2;
 
 		// Determine the package with the better price and displays the result.
-		if (pricePerKg1 > pricePerKg2)
+		if (pricePerKg1 < pricePerKg2)
 			System.out.println("\nPackage1 has a better price.");
-		else
+		else if (pricePerKg1 > pricePerKg2)
 			System.out.println("\nPackage2 has a better price.");
+		else
+			System.out.println("\nBoth package has the same price.");
 	}
 }
 
