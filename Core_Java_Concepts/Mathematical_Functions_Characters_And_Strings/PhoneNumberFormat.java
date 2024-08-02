@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import java.util.Scanner;
 
@@ -25,8 +25,8 @@ public class PhoneNumberFormat
         System.out.printf("\nEnter a 10-digit phone number: ");
         phoneNumber = new StringBuilder(input.nextLine());
 
-        // Displays an error message and terminates the program if the number of digits in the phone number is not 10.
-        if (phoneNumber.length() != 10)
+        // Displays an error message and terminates the program if the number of digits in the phone number is not 10 or is an empty String.
+        if (phoneNumber.length() != 10 || phoneNumber.isEmpty())
         {
             System.out.println("\nInvalid phone number!!!\nPhone Number length must be 10.");
             System.exit(1);
