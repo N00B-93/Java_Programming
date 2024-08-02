@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import java.util.Scanner;
 
@@ -50,9 +50,22 @@ public class Payroll
         double netPay = grossPay - totalDeduction;
 
         // Displays the result.
-        System.out.printf("\nEmployee Name: %s\nHours Worked: %d\nPay Rate: $ %.2f\nGross Pay: $ %.2f\nDeductions\n\t" +
-                "Federal Withholding: $ %.2f\n\tState Withholding: $ %.2f\n\tTotal Deduction: $ %.2f\nNet Pay: $ %.2f\n",
+        System.out.printf("""
+
+                        Employee Name: %s
+                        Hours Worked: %d
+                        Pay Rate: $ %.2f
+                        Gross Pay: $ %.2f
+                        Deductions
+                        \t\
+                        Federal Withholding: $ %.2f
+                        \tState Withholding: $ %.2f
+                        \tTotal Deduction: $ %.2f
+                        Net Pay: $ %.2f
+                        """,
                 employeeName, numberOfHoursWorked, hourlyPayRate, grossPay, federalWithholding, stateWithholding,
                 totalDeduction, netPay);
     }
 }
+
+// commit message: Replace concatenation in printf statement displaying the final result with text block.
