@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import java.util.Scanner;
 
@@ -21,6 +21,13 @@ public class OrderThreeCities
         String city2 = input.nextLine();
         System.out.printf("\nEnter a city name: ");
         String city3 = input.nextLine();
+
+        // Displays an error message and terminates the program if any of the City names are blank.
+        if (city1.isBlank() || city2.isBlank() || city3.isBlank())
+        {
+            System.out.println("\nError: City names should not be blank, Try again.");
+            System.exit(1);
+        }
 
         // Order the cities by comparing names and displays the result.
         if (city1.compareToIgnoreCase(city2) >= 0 && city2.compareToIgnoreCase(city3) >= 0)
