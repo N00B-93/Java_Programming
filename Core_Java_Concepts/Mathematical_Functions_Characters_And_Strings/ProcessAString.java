@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import java.util.Scanner;
 
@@ -19,7 +19,7 @@ public class ProcessAString
         String string = input.nextLine();
 
         // Displays an error message and terminates the program if the user enters an empty String.
-        if (string.equals(""))
+        if (string.isEmpty())
         {
             System.out.println("\nInvalid input, Use a String of characters!!!");
             System.exit(1);
