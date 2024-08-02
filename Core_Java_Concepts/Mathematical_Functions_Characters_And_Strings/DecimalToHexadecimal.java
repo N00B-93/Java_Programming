@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class DecimalToHexadecimal
         }
 
         // Prints the original value if the number is greater than or equal to 0 or less than or equal to 9.
-        if (decimalValue >= 0 && decimalValue <= 9)
+        if (decimalValue <= 9)
             System.out.printf("\nThe Hexadecimal value is %d\n", decimalValue);
         else
         {
