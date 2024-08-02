@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import java.util.Scanner;
 
@@ -25,7 +25,7 @@ public class VowelOrConsonant
         String consonant = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
 
         // Determines if the letter is a consonant or vowel and displays the result.
-        if (vowel.contains(letter + ""))
+        if (vowel.contains((letter + "").toLowerCase()))
             System.out.printf("\n%s is a Vowel\n", letter);
         else if (consonant.contains(letter + ""))
             System.out.printf("\n%s is a consonant\n", letter);
