@@ -1,4 +1,4 @@
-package Mathematical_Functions_Characters_And_Strings;
+package Core_Java_Concepts.Mathematical_Functions_Characters_And_Strings;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class HexToBinary
         }
 
         // Converts the hexadecimal number to decimal.
-        int decimalValue = 10 + (int)(hexValue - 'A');
+        int decimalValue = 10 + (hexValue - 'A');
 
         String binaryNumber = "";
 
