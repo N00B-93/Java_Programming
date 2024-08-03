@@ -3,7 +3,7 @@ package Core_Java_Concepts.Loops;
 import java.util.Scanner;
 
 /*
- 	This is a program prompts the user to enter a s	tring, and displays the number of 
+ 	This is a program prompts the user to enter a String, and displays the number of
 	vowels and consonants in the string.
 */
 
@@ -18,7 +18,7 @@ public class CountVowelsAndConsonants
 		System.out.print("\nEnter a String: ");
 		String string = input.nextLine();
 		
-		// Creates two String variable holding upper and lower case consonants an vowels.
+		// Creates two String variable holding upper and lower case consonants and vowels.
 		String vowels = "aeiouAEIOU";
 		String consonants = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
 
@@ -35,7 +35,7 @@ public class CountVowelsAndConsonants
 				consonantCounter++;
 		}
 		// Displays the result.
-		System.out.printf("\nNumber of Vowels in %s: %d\nNumber of Consonants in %s: %d\n", string, vowelCounter, string, consonantCounter);
+		System.out.printf("\nNumber of Vowels in '%s': %d\nNumber of Consonants in '%s': %d\n", string, vowelCounter, string, consonantCounter);
 	}
 }
 
