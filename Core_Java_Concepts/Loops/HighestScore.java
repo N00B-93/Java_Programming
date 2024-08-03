@@ -21,7 +21,7 @@ public class HighestScore
 
         // Initializes the highestScoreName variable with an empty string and the highestScore variable
         // with 0 score and the studentName with an empty string.
-        String highestScoreName = "", studentName = "";
+        String highestScoreName = "", studentName;
         double highestScore = 0.0;
 
         for (int i = 1; i <= numberOfStudents; i++)
