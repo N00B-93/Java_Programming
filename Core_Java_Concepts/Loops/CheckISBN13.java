@@ -29,12 +29,12 @@ public class CheckISBN13
 			System.exit(0);
 		}
 
-		int sumEven = 0, sumOdd = 0, len = isbn.length(), count = 0;
+		int sumEven = 0, sumOdd = 0, len = isbn.length(), count = 1;
 
 		// Calculates the sum of the numbers in the even and odd positions.
-		while (count < len)
+		while (count <= len)
 		{
-			int digit = Character.getNumericValue(isbn.charAt(count));
+			int digit = Character.getNumericValue(isbn.charAt(count - 1));
 			if (count % 2 != 0)
 				sumOdd += digit;
 			else
