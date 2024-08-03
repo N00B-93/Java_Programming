@@ -10,12 +10,13 @@ public class LeapYears
 	public static void main(String... args)
 	{
 		// Initializes the lineCount and leapYearCounter variable to  0.
-		int lineCount = 1, leapYearCounter = 0;
+		int lineCount = 1, leapYearCounter = 0, START = 101, END = 2100;
 
-		for (int year = 101; year <= 2100; year++)
+		System.out.printf("\nThe leap years from %d to %d are:\n", START, END);
+		for (int year = START; year <= END; year++)
 		{
 			// Display a year if its leap.
-			if ((year % 4 == 0 && year % 400 != 0 && year % 100 != 0) || (year % 400 == 0))
+			if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
 			{
 				System.out.printf("%d ", year);
 				leapYearCounter++;
@@ -23,9 +24,9 @@ public class LeapYears
 				if (lineCount % 10 == 0)
 					System.out.print("\n");
 			}
-			// Continues the iteration if the current year isn't a leap year.
 			else
 				continue;
+
 			// Increments the lineCounter variable by 1.
 			lineCount++;
 		}
