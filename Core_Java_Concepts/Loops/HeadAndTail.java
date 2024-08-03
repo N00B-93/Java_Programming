@@ -2,7 +2,7 @@ package Core_Java_Concepts.Loops;
 
 import java.util.Random;
 
-/* 	This is a program that simulates rolling a dice a million times
+/* 	This is a program that simulates rolling a die a million times
 	and determines the total occurrence of heads and tails.
 */
 
@@ -14,9 +14,9 @@ public class HeadAndTail
 		Random rand = new Random();
 
 		// Initialize head and tail variable to 0.
-		int head = 0, tail = 0;
+		int head = 0, tail = 0, LIMIT = 1_000_000;
 		
-		for (int count = 0; count < 1000000; count++)
+		for (int count = 0; count < LIMIT; count++)
 		{
 			// Generates a random number from 0 t0 1.
 			int randomNumber = rand.nextInt(0, 2);
