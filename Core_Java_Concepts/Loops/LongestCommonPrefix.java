@@ -14,7 +14,6 @@ public class LongestCommonPrefix
 		// Creates a Scanner Object.
 		Scanner input = new Scanner(System.in);
 
-
 		// Reads in two strings.
 		System.out.print("\nEnter the first string: ");
 		String string1 = input.nextLine();
@@ -32,12 +31,8 @@ public class LongestCommonPrefix
 		}
 
 		// While loop that terminates when the two strings no longer have any character in common.
-		while (true)
-		{
-			if (i >= string1.length() || i >= string2.length() || string1.charAt(i) != string2.charAt(i))
-				break;
-			i++;
-		}
+        while (i < string1.length() && i < string2.length() && string1.charAt(i) == string2.charAt(i))
+            i++;
 	
 		// Displays the result.
 		if (string1.length() > string2.length())
