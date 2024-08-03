@@ -12,7 +12,7 @@ public class Combination
 	{
 		int count1, count2, numberOfCombination = 0;
 
-		for (count1 = 1; count1 <= 7; count1++)
+		for (count1 = 1; count1 < 7; count1++)
 		{
 			for (count2 = count1 + 1; count2 <= 7; count2++)
 			{
