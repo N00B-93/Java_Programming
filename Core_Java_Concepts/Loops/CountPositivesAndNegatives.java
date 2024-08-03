@@ -17,7 +17,7 @@ public class CountPositivesAndNegatives
 
         // Declares abd initializes variables used.
         int number, sum = 0, countPositive = 0, countNegative = 0;
-        double average = 0.0;
+        double average;
 
         do // Do-While loop that continues to run till user enters 0.
         {
@@ -40,7 +40,11 @@ public class CountPositivesAndNegatives
         average = (double) sum / (countNegative + countPositive);
 
         // Displays the result.
-        System.out.printf("\nThe number of Positives is: %d\nThe number of negatives is: %d\n" +
-                "The total is: %d\nThe average is: %.2f\n", countPositive, countNegative, sum, average);
+        System.out.printf("""
+                The number of Positives is: %d
+                The number of Negatives is: %d
+                The total is: %d
+                The average is: %.2f
+                """, countPositive, countNegative, sum, average);
     }
 }
