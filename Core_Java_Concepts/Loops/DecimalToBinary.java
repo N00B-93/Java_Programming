@@ -22,10 +22,10 @@ public class DecimalToBinary
 		if (decimal < 0)
 		{
 			System.out.println("\nError: Use positive numbers >= 0 only, Try again.\n");
-		System.exit(0);
+			System.exit(0);
 		}
 
-		// Assigns the user input to a temporary variable to preserve it's value.
+		// Assigns the user input to a temporary variable to preserve its value.
 		int tempVariable = decimal;
 
 		// A String to hold the binary equivalent of the user's input.
@@ -34,13 +34,12 @@ public class DecimalToBinary
 		while (decimal > 0)
 		{
 			int remainder = decimal % 2;  // Gets the last digit in the decimal number.
-
 			binaryString.insert(0, remainder);
 			decimal /= 2;  // Peels off the last digit.
 		}
 		
 		// Displays the result.
-		System.out.printf("\nThe binary equivent of %d is: %s\n", tempVariable, binaryString);
+		System.out.printf("\nThe binary equivalent of %d is: %s\n", tempVariable, binaryString);
 	}
 }
 
