@@ -15,10 +15,12 @@ public class ComputePI
         // Initializes the variable pi with 0.
         double pi = 0;
 
-        for (int i = 1; i <= 100000; i++)
+        int LIMIT = 100_000, STEP = 10_000;
+
+        for (int i = 1; i <= LIMIT; i++)
         {
-            // Calculates the value of PI and displays the result if the current value of i is a multiple of 10.
-            if (i % 10000 == 0)
+            // Calculates the value of PI and displays the result if the current value of i is a multiple of 10,000.
+            if (i % STEP == 0)
             {
                 for (int j = 1; j <= i; j++)
                 {
