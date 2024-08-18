@@ -16,8 +16,8 @@ public class ComputingBMI
         Scanner input = new Scanner(System.in);
 
         // Constants to represent the conversion of weight from pounds to kilograms and inches to meters.
-        double POUNDS_TO_KILOGRAMS = 0.45359;
-        double INCHES_TO_METERS = 0.0254;
+        final double POUNDS_TO_KILOGRAMS = 0.45359;
+        final double INCHES_TO_METERS = 0.0254;
 
         // Reads in weight.
         System.out.print("\nEnter weight in pounds: ");

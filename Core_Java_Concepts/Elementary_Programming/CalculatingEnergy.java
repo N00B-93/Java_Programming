@@ -16,7 +16,7 @@ public class CalculatingEnergy
         Scanner input = new Scanner(System.in);
 
         // Constant to represent the conversion of calories to joules.
-        int CALORIE_TO_JOULE = 4184;
+        final int CALORIE_TO_JOULE = 4184;
 
         // Reads in the weight of water in kg.
         System.out.print("\nEnter the amount of water in kg: ");

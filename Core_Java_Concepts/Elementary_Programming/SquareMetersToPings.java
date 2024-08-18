@@ -14,7 +14,7 @@ public class SquareMetersToPings
 		// Creates a Scanner Object.
 		Scanner console = new Scanner(System.in);
 		// Constant representing square meters to pings conversion factor.
-		double SQUARE_METERS_TO_PINGS = 0.3025;
+		final double SQUARE_METERS_TO_PINGS = 0.3025;
 
 		// Prompts the user to enter an area in square meters.
 		System.out.print("\nEnter area in square meters: ");

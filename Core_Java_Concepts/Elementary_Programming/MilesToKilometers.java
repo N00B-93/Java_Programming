@@ -12,10 +12,11 @@ public class MilesToKilometers
 	public static void main(String... args)
 	{
 		// Constant representing miles to kilometers conversion factor.
-		double MILES_TO_KILOMETERS = 1.609;
+		final double MILES_TO_KILOMETERS = 1.609;
 
 		// Creates a Scanner Object.
 		Scanner console = new Scanner(System.in);
+
 		// Prompts the user to enter distance in Miles.
 		System.out.print("\nEnter distance in Miles: ");
 		double miles = console.nextDouble();
