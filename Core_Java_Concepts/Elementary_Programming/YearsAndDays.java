@@ -11,6 +11,9 @@ public class YearsAndDays
 {
     public static void main(String[] args)
     {
+        // Constants to hold the value of the number of minutes in a year and in a day.
+        final int NUMBER_OF_MINUTES_IN_YEAR = 525_600, NUMBER_OF_MINUTES_IN_DAY = 1_440;
+
         // Creates a Scanner Object.
         Scanner input = new Scanner(System.in);
 
@@ -19,10 +22,10 @@ public class YearsAndDays
         int minutes = input.nextInt();
 
         // Calculates the Years
-        int years = minutes / 525600;
+        int years = minutes / NUMBER_OF_MINUTES_IN_YEAR;
 
         // Calculates the Days.
-        int days = minutes % 525600 / 1440;
+        int days = minutes % NUMBER_OF_MINUTES_IN_YEAR / NUMBER_OF_MINUTES_IN_DAY;
 
         // Displays the result.
         System.out.printf("\n%d minutes is approximately %d years %d days\n", minutes, years, days);
