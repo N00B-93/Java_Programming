@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 /*
     This is a program that prompts the user to enter a temperature between -58 ºF and
-    41ºF and a wind speed greater than or equal to 2 and displays the wind-chill temperature.
+    41ºF and a wind speed greater than or equal to 2 and displays the wind-chill temperature using the formula:
+                twc = 35.74 + (0.6215 * ta) - (35.75 * v^0.16) + (0.4275 * ta * v^0.16)
  */
 
 public class WindChillTemperature
