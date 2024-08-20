@@ -27,7 +27,7 @@ public class GreatCircleDistance
         double y1 = Math.toRadians(input.nextDouble());
 
         // Prompts the user to enter the latitude and longitude of the second point and converts them to radians.
-        System.out.printf("\nEnter point 1 (latitude and longitude separated by space) in degrees: ");
+        System.out.printf("\nEnter point 2 (latitude and longitude separated by space) in degrees: ");
         double x2 = Math.toRadians(input.nextDouble());
         double y2 = Math.toRadians(input.nextDouble());
 
@@ -36,6 +36,6 @@ public class GreatCircleDistance
                                     * Math.cos(y1 - y2));
 
         // Displays the result.
-        System.out.printf("\nThe distance between the two points is: %.2f\n", greatCircleDistance);
+        System.out.printf("\nThe distance between the two points is: %.2fKM\n", greatCircleDistance);
     }
 }
